@@ -463,30 +463,33 @@
     .materials-links a span { transition: transform .2s ease; }
     .materials-links a:hover span { transform: translate(3px, -2px); }
     .contact-block { margin-top: 42px; }
-    .deploy-block {
+    .deploy-inline {
+      margin-top: 28px;
+      padding: 22px 24px;
       border: 1px solid #6658e85c;
-      border-radius: 14px;
+      border-radius: 12px;
       background: linear-gradient(135deg, #ffffffd9 0%, #f3f4ffdf 100%);
-      padding: 30px 32px;
-      box-shadow: 0 14px 40px #293dff12, inset 0 1px #ffffff;
+      box-shadow: 0 10px 30px #293dff10, inset 0 1px #ffffff;
     }
-    .deploy-block > p {
-      color: var(--blue);
-      font-size: .64rem;
-    }
-    .deploy-block .materials-copy h3 {
-      font-size: clamp(1.65rem, 2.7vw, 2.35rem);
+    .deploy-inline h4 {
+      margin: 0;
       color: var(--ink);
+      letter-spacing: -.02em;
+      font-size: clamp(1.28rem, 2vw, 1.72rem);
+      font-weight: 500;
+      line-height: 1.2;
     }
-    .deploy-block .materials-copy > p {
-      max-width: 900px;
-      font-size: .78rem;
+    .deploy-inline > p {
+      max-width: 820px;
+      margin: 10px 0 0;
       color: #090c27c7;
+      font-size: .74rem;
+      line-height: 1.7;
     }
-    .deploy-block .materials-links {
-      margin-top: 20px;
+    .deploy-inline .materials-links {
+      margin-top: 18px;
     }
-    .deploy-block .materials-links a {
+    .deploy-inline .materials-links a {
       color: #fff;
       background: var(--blue);
       border: 1px solid var(--blue);
@@ -693,6 +696,13 @@
           <div class="materials-copy">
             <h3>Developed with Raycaster's research and data ecosystem.</h3>
             <p>WorkWorlds was produced through a research collaboration with Raycaster and developed within Raycaster's broader ecosystem for building and evaluating agent systems. The work used real-world organizational data and source materials made available through third-party data-provider relationships to inform environment construction and validation. The named organizational worlds are fictionalized research environments, and restricted provider materials are excluded from this public release.</p>
+            <div class="deploy-inline">
+              <h4>Bring WorkWorlds to an industry setting.</h4>
+              <p>Interested in deploying an industry-scale evaluation environment inside your organization? Contact us to discuss adapting the infrastructure to your workflows, permissions, internal systems, and evaluation needs.</p>
+              <nav class="materials-links" aria-label="Contact links">
+                <a href="mailto:yininghua@g.harvard.edu?subject=WorkWorlds%20deployment">Contact us about deployment <span aria-hidden="true">↗</span></a>
+              </nav>
+            </div>
           </div>
         </div>
         <div class="materials-block contact-block">
@@ -727,16 +737,7 @@
 }</pre>
           </div>
         </div>
-        <div class="materials-block contact-block deploy-block">
-          <p>Deploy</p>
-          <div class="materials-copy">
-            <h3>Bring WorkWorlds to an industry setting.</h3>
-            <p>Interested in deploying an industry-scale evaluation environment inside your organization? Contact us to discuss adapting the infrastructure to your workflows, permissions, internal systems, and evaluation needs.</p>
-            <nav class="materials-links" aria-label="Contact links">
-              <a href="mailto:yininghua@g.harvard.edu?subject=WorkWorlds%20deployment">Contact us about deployment <span aria-hidden="true">↗</span></a>
-            </nav>
-          </div>
-        </div>
+        
       </section>
 
       <section class="verify-box" id="reproduce">
