@@ -1,0 +1,8 @@
+agent_id: opus5
+model_version: claude-opus-5
+harness: claude-code
+reasoning_effort: medium
+timeout_s_native: 3600
+timeout_s_qc: 1800
+tool_call_limit: null
+context_window_cap: null

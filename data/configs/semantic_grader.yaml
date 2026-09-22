@@ -1,0 +1,13 @@
+model_version: claude-opus-5
+reasoning_effort: medium
+timeout_s: 180
+max_output_tokens: 4096
+batch: post_execution
+tool_use: false
+blinding:
+  condition: true
+  packet: true
+  agent_identity: true
+prompt: |
+  Score the candidate artifact against the frozen criterion using only the
+  declared verifier evidence. Return pass or fail with a short justification.

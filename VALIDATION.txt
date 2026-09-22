@@ -1,0 +1,24 @@
+WorkWorlds public-release validation record
+Artifact date: 2026-09-22
+Release version: 0.1.0
+
+Required files present: yes
+Criterion executions: 1728
+Completed runs: 192
+Attempt records: 205 (192 completed, 13 failed; 12 runs retried)
+Release tests: 10 passed
+Reference tests: 5 tests, 12 assertions
+Seeded isolation adversaries: 6/6 detected
+Public-record consistency checks: 5760 passed, 0 failed
+Semantic-grader sample: 240 row keys and inclusion probabilities reproduced
+Access audit sample: 346 row keys and inclusion probabilities reproduced
+JSON Schema validation: matched_results and validation_results passed
+Statistical recompute: matches frozen analysis_results.json
+  (software versions excluded)
+Manuscript: compiled successfully, 20 pages, rendered pages visually reviewed
+
+These checks establish consistency of the released records and calculations.
+They do not authenticate model executions or human review activity.
+
+Command:
+  make verify

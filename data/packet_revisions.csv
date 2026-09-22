@@ -1,0 +1,67 @@
+task_id,curator_id,stage,timestamp,actor,n_sources,note
+T01,curator-1,submitted,2026-08-28T10:30:34Z,curator-1,11,Curator submission covering 11/11 criteria.
+T01,curator-1,completeness_review,2026-08-28T11:54:34Z,completeness-reviewer,11,No missing criteria.
+T01,curator-1,adjudicator_decision,2026-08-28T13:04:45Z,adjudicator,11,All declared sufficient source sets are covered.
+T01,curator-1,final_packet,2026-08-28T13:20:17Z,release-freeze,11,Frozen packet used for matched evaluation.
+T01,curator-2,submitted,2026-08-28T10:03:29Z,curator-2,11,Curator submission covering 11/11 criteria.
+T01,curator-2,completeness_review,2026-08-28T13:08:40Z,completeness-reviewer,11,No missing criteria.
+T01,curator-2,adjudicator_decision,2026-08-28T14:37:01Z,adjudicator,11,All declared sufficient source sets are covered.
+T01,curator-2,final_packet,2026-08-28T14:51:03Z,release-freeze,11,Frozen packet used for matched evaluation.
+T02,curator-1,submitted,2026-08-28T13:16:03Z,curator-1,10,Curator submission covering 11/11 criteria.
+T02,curator-1,completeness_review,2026-08-28T15:14:36Z,completeness-reviewer,10,No missing criteria.
+T02,curator-1,adjudicator_decision,2026-08-28T16:21:18Z,adjudicator,10,All declared sufficient source sets are covered.
+T02,curator-1,final_packet,2026-08-28T16:36:42Z,release-freeze,10,Frozen packet used for matched evaluation.
+T02,curator-2,submitted,2026-08-28T12:56:14Z,curator-2,10,Curator submission covering 11/11 criteria.
+T02,curator-2,completeness_review,2026-08-28T14:16:36Z,completeness-reviewer,10,No missing criteria.
+T02,curator-2,adjudicator_decision,2026-08-28T15:38:54Z,adjudicator,10,All declared sufficient source sets are covered.
+T02,curator-2,final_packet,2026-08-28T16:52:06Z,release-freeze,10,Frozen packet used for matched evaluation.
+T03,curator-1,submitted,2026-08-28T16:35:18Z,curator-1,9,Curator submission covering 9/9 criteria.
+T03,curator-1,completeness_review,2026-08-28T19:36:05Z,completeness-reviewer,9,No missing criteria.
+T03,curator-1,adjudicator_decision,2026-08-28T22:02:49Z,adjudicator,9,All declared sufficient source sets are covered.
+T03,curator-1,final_packet,2026-08-28T23:13:17Z,release-freeze,9,Frozen packet used for matched evaluation.
+T03,curator-2,submitted,2026-08-28T15:50:47Z,curator-2,8,Curator submission covering 7/9 criteria.
+T03,curator-2,completeness_review,2026-08-28T17:55:48Z,completeness-reviewer,8,2 criteria require additional evidence.
+T03,curator-2,curator_revision,2026-08-28T18:33:39Z,curator-2,9,Added 1 source to address completeness feedback.
+T03,curator-2,adjudicator_decision,2026-08-28T19:35:17Z,adjudicator,9,All declared sufficient source sets are covered.
+T03,curator-2,final_packet,2026-08-28T19:51:35Z,release-freeze,9,Frozen packet used for matched evaluation.
+T04,curator-1,submitted,2026-08-31T10:20:42Z,curator-1,9,Curator submission covering 14/14 criteria.
+T04,curator-1,completeness_review,2026-08-31T12:54:14Z,completeness-reviewer,9,No missing criteria.
+T04,curator-1,adjudicator_decision,2026-08-31T15:45:43Z,adjudicator,9,All declared sufficient source sets are covered.
+T04,curator-1,final_packet,2026-08-31T16:28:41Z,release-freeze,9,Frozen packet used for matched evaluation.
+T04,curator-2,submitted,2026-08-31T10:40:45Z,curator-2,9,Curator submission covering 0/14 criteria.
+T04,curator-2,completeness_review,2026-08-31T12:56:43Z,completeness-reviewer,9,14 criteria require additional evidence.
+T04,curator-2,curator_revision,2026-08-31T14:00:57Z,curator-2,10,Added 1 source to address completeness feedback.
+T04,curator-2,adjudicator_decision,2026-08-31T15:04:40Z,adjudicator,10,All declared sufficient source sets are covered.
+T04,curator-2,final_packet,2026-08-31T15:16:35Z,release-freeze,10,Frozen packet used for matched evaluation.
+T05,curator-1,submitted,2026-08-31T13:53:18Z,curator-1,9,Curator submission covering 9/9 criteria.
+T05,curator-1,completeness_review,2026-08-31T16:03:40Z,completeness-reviewer,9,No missing criteria.
+T05,curator-1,adjudicator_decision,2026-08-31T18:27:14Z,adjudicator,9,All declared sufficient source sets are covered.
+T05,curator-1,final_packet,2026-08-31T18:37:31Z,release-freeze,9,Frozen packet used for matched evaluation.
+T05,curator-2,submitted,2026-08-31T14:17:41Z,curator-2,9,Curator submission covering 9/9 criteria.
+T05,curator-2,completeness_review,2026-08-31T16:21:19Z,completeness-reviewer,9,No missing criteria.
+T05,curator-2,adjudicator_decision,2026-08-31T18:38:44Z,adjudicator,9,All declared sufficient source sets are covered.
+T05,curator-2,final_packet,2026-08-31T19:28:05Z,release-freeze,9,Frozen packet used for matched evaluation.
+T06,curator-1,submitted,2026-08-31T17:38:32Z,curator-1,9,Curator submission covering 8/8 criteria.
+T06,curator-1,completeness_review,2026-08-31T19:15:05Z,completeness-reviewer,9,No missing criteria.
+T06,curator-1,adjudicator_decision,2026-08-31T22:41:03Z,adjudicator,9,All declared sufficient source sets are covered.
+T06,curator-1,final_packet,2026-08-31T23:40:03Z,release-freeze,9,Frozen packet used for matched evaluation.
+T06,curator-2,submitted,2026-08-31T18:20:42Z,curator-2,9,Curator submission covering 8/8 criteria.
+T06,curator-2,completeness_review,2026-08-31T19:44:45Z,completeness-reviewer,9,No missing criteria.
+T06,curator-2,adjudicator_decision,2026-08-31T20:53:52Z,adjudicator,9,All declared sufficient source sets are covered.
+T06,curator-2,final_packet,2026-08-31T21:22:46Z,release-freeze,9,Frozen packet used for matched evaluation.
+T08,curator-1,submitted,2026-09-01T08:16:59Z,curator-1,7,Curator submission covering 5/5 criteria.
+T08,curator-1,completeness_review,2026-09-01T09:41:22Z,completeness-reviewer,7,No missing criteria.
+T08,curator-1,adjudicator_decision,2026-09-01T13:14:50Z,adjudicator,7,All declared sufficient source sets are covered.
+T08,curator-1,final_packet,2026-09-01T13:27:34Z,release-freeze,7,Frozen packet used for matched evaluation.
+T08,curator-2,submitted,2026-09-01T09:00:12Z,curator-2,7,Curator submission covering 5/5 criteria.
+T08,curator-2,completeness_review,2026-09-01T10:56:41Z,completeness-reviewer,7,No missing criteria.
+T08,curator-2,adjudicator_decision,2026-09-01T13:03:28Z,adjudicator,7,All declared sufficient source sets are covered.
+T08,curator-2,final_packet,2026-09-01T13:25:32Z,release-freeze,7,Frozen packet used for matched evaluation.
+T07,curator-1,submitted,2026-09-01T12:13:07Z,curator-1,8,Curator submission covering 5/5 criteria.
+T07,curator-1,completeness_review,2026-09-01T15:30:03Z,completeness-reviewer,8,No missing criteria.
+T07,curator-1,adjudicator_decision,2026-09-01T18:38:36Z,adjudicator,8,All declared sufficient source sets are covered.
+T07,curator-1,final_packet,2026-09-01T19:30:40Z,release-freeze,8,Frozen packet used for matched evaluation.
+T07,curator-2,submitted,2026-09-01T12:30:50Z,curator-2,8,Curator submission covering 5/5 criteria.
+T07,curator-2,completeness_review,2026-09-01T14:30:39Z,completeness-reviewer,8,No missing criteria.
+T07,curator-2,adjudicator_decision,2026-09-01T17:17:05Z,adjudicator,8,All declared sufficient source sets are covered.
+T07,curator-2,final_packet,2026-09-01T18:18:26Z,release-freeze,8,Frozen packet used for matched evaluation.

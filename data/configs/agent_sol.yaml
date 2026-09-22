@@ -1,0 +1,8 @@
+agent_id: sol
+model_version: gpt-5.6-sol
+harness: codex
+reasoning_effort: medium
+timeout_s_native: 3600
+timeout_s_qc: 1800
+tool_call_limit: null
+context_window_cap: null

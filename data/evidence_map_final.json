@@ -1,0 +1,2231 @@
+{
+  "schema": "workworlds-evidence-map-final/v1",
+  "frozen_at": "2026-08-27T18:00:00Z",
+  "criteria": [
+    {
+      "criterion_id": "T07-R01",
+      "task_id": "T07",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qc/metrology-queue.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/assets/criticality-ranking.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/equipment/oq-status.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qc/metrology-queue.eml|filesystem:qc/assets/criticality-ranking.pdf|filesystem:qms/equipment/oq-status.docx",
+      "criterion_freeze_hash": "74495ef0d368252a816a4fead43059b7e929dce705b2df0add058d3ec9427d8e",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T07-R02",
+      "task_id": "T07",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qc/metrology-queue.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/assets/criticality-ranking.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/metrology/calibration-certs.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/equipment/overdue-oq-note.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qc/metrology-queue.eml|filesystem:qc/assets/criticality-ranking.pdf|filesystem:qc/metrology/calibration-certs.pdf|filesystem:qms/equipment/overdue-oq-note.docx",
+      "criterion_freeze_hash": "4ac60a197a7ac9deeca33cd645a50daee8bfe3b9ec752cc55abbdeafed001fa8",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T07-R03",
+      "task_id": "T07",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qc/metrology-queue.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/assets/criticality-ranking.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/assets/soonest-lapsing.csv"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qc/metrology-queue.eml|filesystem:qc/assets/criticality-ranking.pdf|filesystem:qc/assets/soonest-lapsing.csv",
+      "criterion_freeze_hash": "ce5c0a658b0d3e6e369d7dbb4ede1e538201d9c730d9f60b4a8495b44b28be4b",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T07-R04",
+      "task_id": "T07",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qc/metrology-queue.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/assets/criticality-ranking.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/equipment/oq-status.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qc/metrology-queue.eml|filesystem:qc/assets/criticality-ranking.pdf|filesystem:qms/equipment/oq-status.docx",
+      "criterion_freeze_hash": "c5e02357df94c66241eed5bf0a0f0a9685ea924d946b58e20f1125b0461fb0ac",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T07-R05",
+      "task_id": "T07",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qc/metrology-queue.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/assets/criticality-ranking.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/assets/qualification-gap-list.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/equipment/oq-status.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qc/metrology-queue.eml|filesystem:qc/assets/criticality-ranking.pdf|filesystem:qc/assets/qualification-gap-list.xlsx|filesystem:qms/equipment/oq-status.docx",
+      "criterion_freeze_hash": "9c03ffe3bbad59b48c5ef61c5c69e533c23e1c8c683dc731afb3fd2e2b374a09",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T08-R01",
+      "task_id": "T08",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/chamber-assignment.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/method-transfer-memo.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/oos-investigations.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/regression-workbook.xlsx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:lab/stability/chamber-assignment.csv|filesystem:qc/stability/method-transfer-memo.docx|filesystem:qc/stability/oos-investigations.pdf|filesystem:qc/stability/regression-workbook.xlsx",
+      "criterion_freeze_hash": "a44a4565351be5399b41f7a875a295831775004687441a52b22fb49ee4e08399",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T08-R02",
+      "task_id": "T08",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/chamber-assignment.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/method-transfer-memo.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/oos-investigations.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/regression-workbook.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/retest-policy.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:lab/stability/chamber-assignment.csv|filesystem:qc/stability/method-transfer-memo.docx|filesystem:qc/stability/oos-investigations.pdf|filesystem:qc/stability/regression-workbook.xlsx|filesystem:qc/stability/retest-policy.pdf",
+      "criterion_freeze_hash": "61e8ce6b494bc05d25d7d18dc1e7675218aa6b14c6c043a7f8c956a37b9713f7",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T08-R03",
+      "task_id": "T08",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/chamber-assignment.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/oos-investigations.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/regression-workbook.xlsx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:lab/stability/chamber-assignment.csv|filesystem:qc/stability/oos-investigations.pdf|filesystem:qc/stability/regression-workbook.xlsx",
+      "criterion_freeze_hash": "79bc75f2797cd6955914231819472a7c1093bdc7d79e2e81125e7190d7ea7ae7",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T08-R04",
+      "task_id": "T08",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qc/shelf-life-question.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/chamber-assignment.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/oos-investigations.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/regression-workbook.xlsx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qc/shelf-life-question.eml|filesystem:lab/stability/chamber-assignment.csv|filesystem:qc/stability/oos-investigations.pdf|filesystem:qc/stability/regression-workbook.xlsx",
+      "criterion_freeze_hash": "ab467946ae9dcde6643df9a4b1532567db325d154e803d8e8407fc938a092a49",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T08-R05",
+      "task_id": "T08",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/chamber-assignment.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/oos-investigations.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qc/stability/regression-workbook.xlsx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:lab/stability/chamber-assignment.csv|filesystem:qc/stability/oos-investigations.pdf|filesystem:qc/stability/regression-workbook.xlsx",
+      "criterion_freeze_hash": "f7ea4b4b65a71fb4199e8b6769dd127d383bac8091848e618839a9d9842e3567",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T01-R01",
+      "task_id": "T01",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/authority-q-list.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/commitment-tracker.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/inbox/stability-query-2025.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/chamber-alarm-log.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/ir-history-index.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-3-3-5-excerpt.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/cmc/authority-q-list.docx|filesystem:desk/RA/cmc/commitment-tracker.xlsx|filesystem:email/inbox/stability-query-2025.eml|filesystem:lab/stability/chamber-alarm-log.csv|filesystem:reg/cmc/ir-history-index.pdf|filesystem:reg/cmc/module-3-3-5-excerpt.pdf",
+      "criterion_freeze_hash": "b0d7d03fcaba4299e485643e381bf11cf21cc596e35a0f95a469b174046f6276",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T01-R02",
+      "task_id": "T01",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/authority-q-list.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/commitment-tracker.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/inbox/stability-query-2025.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/ir-history-index.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-3-3-5-excerpt.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "adjudicated_solvable",
+      "final_source_aliases": "filesystem:desk/RA/cmc/authority-q-list.docx|filesystem:desk/RA/cmc/commitment-tracker.xlsx|filesystem:email/inbox/stability-query-2025.eml|filesystem:reg/cmc/ir-history-index.pdf|filesystem:reg/cmc/module-3-3-5-excerpt.pdf",
+      "criterion_freeze_hash": "db3701ba5a94c4f997789eb1306f779cdd92a6101fa05747c344eb9000d601e2",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T01-R03",
+      "task_id": "T01",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/authority-q-list.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/inbox/stability-query-2025.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/stability/commitment-bridge-memo.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/ir-history-index.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/cmc/authority-q-list.docx|filesystem:email/inbox/stability-query-2025.eml|filesystem:qms/stability/commitment-bridge-memo.pdf|filesystem:reg/cmc/ir-history-index.pdf",
+      "criterion_freeze_hash": "7f6ea7ebe5852a240936b51e3afea7c477910f817f0a305ec39858c00646fe75",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T01-R04",
+      "task_id": "T01",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/authority-q-list.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/inbox/stability-query-2025.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/stability/commitment-bridge-memo.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "sharepoint/cmc/annual-update-checklist.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "adjudicated_solvable",
+      "final_source_aliases": "filesystem:desk/RA/cmc/authority-q-list.docx|filesystem:email/inbox/stability-query-2025.eml|filesystem:qms/stability/commitment-bridge-memo.pdf|filesystem:sharepoint/cmc/annual-update-checklist.docx",
+      "criterion_freeze_hash": "6316b487467038f004d7ba073931a9c77350e1bd4237dba060389badb8c74237",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T01-R05",
+      "task_id": "T01",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/authority-q-list.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/inbox/stability-query-2025.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/chamber-alarm-log.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/stability/commitment-bridge-memo.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-3-3-5-excerpt.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "sharepoint/cmc/annual-update-checklist.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/cmc/authority-q-list.docx|filesystem:email/inbox/stability-query-2025.eml|filesystem:lab/stability/chamber-alarm-log.csv|filesystem:qms/stability/commitment-bridge-memo.pdf|filesystem:reg/cmc/module-3-3-5-excerpt.pdf|filesystem:sharepoint/cmc/annual-update-checklist.docx",
+      "criterion_freeze_hash": "5d576cb082138b3d184e0367376538c75d46a6c200c5eef6a0245ae6282221a1",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T01-R06",
+      "task_id": "T01",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/authority-q-list.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/stability/lot-trend-summary.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/inbox/stability-query-2025.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/chamber-alarm-log.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/stability/commitment-bridge-memo.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/ir-history-index.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "sharepoint/cmc/annual-update-checklist.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/cmc/authority-q-list.docx|filesystem:desk/RA/cmc/stability/lot-trend-summary.xlsx|filesystem:email/inbox/stability-query-2025.eml|filesystem:lab/stability/chamber-alarm-log.csv|filesystem:qms/stability/commitment-bridge-memo.pdf|filesystem:reg/cmc/ir-history-index.pdf|filesystem:sharepoint/cmc/annual-update-checklist.docx",
+      "criterion_freeze_hash": "c200a69e083be32dad321c21e5d84abf44c64cbb5974489135e3139f6c42b2b3",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T01-R07",
+      "task_id": "T01",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/authority-q-list.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/commitment-tracker.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/inbox/stability-query-2025.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/stability/commitment-bridge-memo.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-3-3-5-excerpt.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/cmc/authority-q-list.docx|filesystem:desk/RA/cmc/commitment-tracker.xlsx|filesystem:email/inbox/stability-query-2025.eml|filesystem:qms/stability/commitment-bridge-memo.pdf|filesystem:reg/cmc/module-3-3-5-excerpt.pdf",
+      "criterion_freeze_hash": "e628d26609c895965c4868c2c0e31adc1795db41ca7a724510dacb97da4c56f3",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T01-R08",
+      "task_id": "T01",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/inbox/stability-query-2025.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/stability/commitment-bridge-memo.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/ir-history-index.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "adjudicated_solvable",
+      "final_source_aliases": "filesystem:email/inbox/stability-query-2025.eml|filesystem:qms/stability/commitment-bridge-memo.pdf|filesystem:reg/cmc/ir-history-index.pdf",
+      "criterion_freeze_hash": "166305faba7886347bbdc703ef3728bd3a8a599371041e033ea372a860de7b05",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T01-R09",
+      "task_id": "T01",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/authority-q-list.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/inbox/stability-query-2025.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/ir-history-index.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "sharepoint/cmc/annual-update-checklist.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/cmc/authority-q-list.docx|filesystem:email/inbox/stability-query-2025.eml|filesystem:reg/cmc/ir-history-index.pdf|filesystem:sharepoint/cmc/annual-update-checklist.docx",
+      "criterion_freeze_hash": "a6b419a8c0d7a3baf03118d50dff496449969186a797fad896bdbc21e8ba5275",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T01-R10",
+      "task_id": "T01",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/authority-q-list.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/commitment-tracker.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/inbox/stability-query-2025.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/chamber-alarm-log.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/ir-history-index.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/cmc/authority-q-list.docx|filesystem:desk/RA/cmc/commitment-tracker.xlsx|filesystem:email/inbox/stability-query-2025.eml|filesystem:lab/stability/chamber-alarm-log.csv|filesystem:reg/cmc/ir-history-index.pdf",
+      "criterion_freeze_hash": "adf6b6d1fd1cc6406831cad90f9f3dbd990dcea1d54b470c8d62a3b37800c0bd",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T01-R11",
+      "task_id": "T01",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/authority-q-list.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/cmc/stability/lot-trend-summary.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/inbox/stability-query-2025.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/chamber-alarm-log.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "sharepoint/cmc/annual-update-checklist.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/cmc/authority-q-list.docx|filesystem:desk/RA/cmc/stability/lot-trend-summary.xlsx|filesystem:email/inbox/stability-query-2025.eml|filesystem:lab/stability/chamber-alarm-log.csv|filesystem:sharepoint/cmc/annual-update-checklist.docx",
+      "criterion_freeze_hash": "d664d6a97b48ae652c20902936afc2b4ba9e0af3187cd56fe788f60c94edcf0b",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T02-R01",
+      "task_id": "T02",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/line-clearance-photo.jpg"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/packaging/complaint-trend.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/deviations/overwrap-ccit-note.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:msat/packaging/line-clearance-photo.jpg|filesystem:qa/packaging/complaint-trend.xlsx|filesystem:qms/deviations/overwrap-ccit-note.docx",
+      "criterion_freeze_hash": "bc1fed989e589809d343269097a1e9a9f070bb3bff71b9d8526aa7f927958c0e",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T02-R02",
+      "task_id": "T02",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/line-clearance-photo.jpg"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/seal-strength-raw.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/packaging/complaint-trend.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-overwrap-014.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/deviations/overwrap-ccit-note.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/packaging/spec-redline-v3.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:msat/packaging/line-clearance-photo.jpg|filesystem:msat/packaging/seal-strength-raw.csv|filesystem:qa/packaging/complaint-trend.xlsx|filesystem:qms/change/cr-overwrap-014.pdf|filesystem:qms/deviations/overwrap-ccit-note.docx|filesystem:reg/packaging/spec-redline-v3.docx",
+      "criterion_freeze_hash": "3e871f55ab5c7f4bf3e80d8a2798b5efdbbdea69b59d393173a013aabda8f700",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T02-R03",
+      "task_id": "T02",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/line-clearance-photo.jpg"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/seal-strength-raw.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/packaging/complaint-trend.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/deviations/overwrap-ccit-note.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:msat/packaging/line-clearance-photo.jpg|filesystem:msat/packaging/seal-strength-raw.csv|filesystem:qa/packaging/complaint-trend.xlsx|filesystem:qms/deviations/overwrap-ccit-note.docx",
+      "criterion_freeze_hash": "42f352f1c42cf930bc772bc371aa46e657f1561778494276028511189737c1bb",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T02-R04",
+      "task_id": "T02",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/line-clearance-photo.jpg"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/seal-strength-raw.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-overwrap-014.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/deviations/overwrap-ccit-note.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/container-closure-section.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:msat/packaging/line-clearance-photo.jpg|filesystem:msat/packaging/seal-strength-raw.csv|filesystem:qms/change/cr-overwrap-014.pdf|filesystem:qms/deviations/overwrap-ccit-note.docx|filesystem:reg/cmc/container-closure-section.pdf",
+      "criterion_freeze_hash": "562c1b38aafbb086edd9e67756d9c691cc1650f37b6288437ee60c340a37160e",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T02-R05",
+      "task_id": "T02",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/msat/supplier-quote-thread.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/line-clearance-photo.jpg"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/seal-strength-raw.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/deviations/overwrap-ccit-note.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/msat/supplier-quote-thread.eml|filesystem:msat/packaging/line-clearance-photo.jpg|filesystem:msat/packaging/seal-strength-raw.csv|filesystem:qms/deviations/overwrap-ccit-note.docx",
+      "criterion_freeze_hash": "30efc5a93f8b8bf4c1085b5e095f4ce0069f74d7c49c01128550538ca5cf4d01",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T02-R06",
+      "task_id": "T02",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/msat/supplier-quote-thread.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/line-clearance-photo.jpg"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/packaging/complaint-trend.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/deviations/overwrap-ccit-note.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/container-closure-section.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/packaging/spec-redline-v3.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/msat/supplier-quote-thread.eml|filesystem:msat/packaging/line-clearance-photo.jpg|filesystem:qa/packaging/complaint-trend.xlsx|filesystem:qms/deviations/overwrap-ccit-note.docx|filesystem:reg/cmc/container-closure-section.pdf|filesystem:reg/packaging/spec-redline-v3.docx",
+      "criterion_freeze_hash": "82969037811d9f80431bf7f2818ad646d1aa356c44319f8d1f821f63ee3c2516",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T02-R07",
+      "task_id": "T02",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/line-clearance-photo.jpg"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/deviations/overwrap-ccit-note.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:msat/packaging/line-clearance-photo.jpg|filesystem:qms/deviations/overwrap-ccit-note.docx",
+      "criterion_freeze_hash": "1d1acd92e2e81e5b3ac2a6d2778831a90e98a36665fecb9d8b891663ae99d66c",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T02-R08",
+      "task_id": "T02",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/msat/supplier-quote-thread.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/line-clearance-photo.jpg"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/packaging/complaint-trend.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-overwrap-014.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/deviations/overwrap-ccit-note.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/msat/supplier-quote-thread.eml|filesystem:msat/packaging/line-clearance-photo.jpg|filesystem:qa/packaging/complaint-trend.xlsx|filesystem:qms/change/cr-overwrap-014.pdf|filesystem:qms/deviations/overwrap-ccit-note.docx",
+      "criterion_freeze_hash": "fe58b0c9a13038ff36ac6e959a9b1a7afa85d2a29f1656e4766435c303dcdc8f",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T02-R09",
+      "task_id": "T02",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/line-clearance-photo.jpg"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-overwrap-014.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/deviations/overwrap-ccit-note.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:msat/packaging/line-clearance-photo.jpg|filesystem:qms/change/cr-overwrap-014.pdf|filesystem:qms/deviations/overwrap-ccit-note.docx",
+      "criterion_freeze_hash": "6dc572e802eff106bf1176f7982d5ab3069f884a384ef23d1dae4787b3960297",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T02-R10",
+      "task_id": "T02",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/msat/supplier-quote-thread.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/line-clearance-photo.jpg"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/seal-strength-raw.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/packaging/complaint-trend.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/deviations/overwrap-ccit-note.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/packaging/spec-redline-v3.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/msat/supplier-quote-thread.eml|filesystem:msat/packaging/line-clearance-photo.jpg|filesystem:msat/packaging/seal-strength-raw.csv|filesystem:qa/packaging/complaint-trend.xlsx|filesystem:qms/deviations/overwrap-ccit-note.docx|filesystem:reg/packaging/spec-redline-v3.docx",
+      "criterion_freeze_hash": "e21ca9888dcfc08f1fc82a18f90c85687bbe872c1f56bd9449049504ddaa3c3e",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T02-R11",
+      "task_id": "T02",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "msat/packaging/line-clearance-photo.jpg"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/packaging/complaint-trend.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/deviations/overwrap-ccit-note.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:msat/packaging/line-clearance-photo.jpg|filesystem:qa/packaging/complaint-trend.xlsx|filesystem:qms/deviations/overwrap-ccit-note.docx",
+      "criterion_freeze_hash": "bb814805d3d975186eb72f1a8ffa77de95f90a6dbb5c072a29b700c89f87f9d5",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T03-R01",
+      "task_id": "T03",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "mfg/sterile/media-fill-annex.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/validation/protocol-comment-log.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/capa-filter-integrity.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/validation-defense-bridge.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:mfg/sterile/media-fill-annex.pdf|filesystem:qa/validation/protocol-comment-log.xlsx|filesystem:qms/capa/capa-filter-integrity.pdf|filesystem:qms/capa/validation-defense-bridge.docx",
+      "criterion_freeze_hash": "4fdb1237943f9337a13e0d8da3de85ad49ee7b1aacce56987058118c5e6d8312",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T03-R02",
+      "task_id": "T03",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qa/pai-prep-agenda.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/capa-filter-integrity.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/validation-defense-bridge.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qa/pai-prep-agenda.eml|filesystem:qms/capa/capa-filter-integrity.pdf|filesystem:qms/capa/validation-defense-bridge.docx",
+      "criterion_freeze_hash": "90fa5c4ff74458e4774db2209c88ae1e9dd066234bea13d26ee53067198a4a87",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T03-R03",
+      "task_id": "T03",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qa/pai-prep-agenda.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/sterile/filter-train-diagram.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "msat/validation/filter-pv-report.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/capa-filter-integrity.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/validation-defense-bridge.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qa/pai-prep-agenda.eml|filesystem:mfg/sterile/filter-train-diagram.pdf|filesystem:msat/validation/filter-pv-report.pdf|filesystem:qms/capa/capa-filter-integrity.pdf|filesystem:qms/capa/validation-defense-bridge.docx",
+      "criterion_freeze_hash": "8d19ed89428e867f22dc819c3dbb95f9a8de263927ce96a3aac2161c90d1019a",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T03-R04",
+      "task_id": "T03",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qa/pai-prep-agenda.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "msat/validation/filter-pv-report.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/validation/protocol-comment-log.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/capa-filter-integrity.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/validation-defense-bridge.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qa/pai-prep-agenda.eml|filesystem:msat/validation/filter-pv-report.pdf|filesystem:qa/validation/protocol-comment-log.xlsx|filesystem:qms/capa/capa-filter-integrity.pdf|filesystem:qms/capa/validation-defense-bridge.docx",
+      "criterion_freeze_hash": "057b85b37eb832d892f57c9090c6073482313ff6a84ea00dbe8ddddc67a22506",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T03-R05",
+      "task_id": "T03",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "msat/validation/filter-pv-report.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/capa-filter-integrity.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/validation-defense-bridge.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:msat/validation/filter-pv-report.pdf|filesystem:qms/capa/capa-filter-integrity.pdf|filesystem:qms/capa/validation-defense-bridge.docx",
+      "criterion_freeze_hash": "5e37c478765ed905f2d161961476b79efa8553ad8a724689ea6290d2a207c462",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T03-R06",
+      "task_id": "T03",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "qa/validation/protocol-comment-log.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/capa-filter-integrity.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/validation-defense-bridge.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:qa/validation/protocol-comment-log.xlsx|filesystem:qms/capa/capa-filter-integrity.pdf|filesystem:qms/capa/validation-defense-bridge.docx",
+      "criterion_freeze_hash": "65a49c917603211ed25812896f69b3028dbcda07c2e94dd61321003e71bf5bc3",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T03-R07",
+      "task_id": "T03",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "mfg/sterile/filter-train-diagram.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/capa-filter-integrity.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/validation-defense-bridge.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:mfg/sterile/filter-train-diagram.pdf|filesystem:qms/capa/capa-filter-integrity.pdf|filesystem:qms/capa/validation-defense-bridge.docx",
+      "criterion_freeze_hash": "b457248852f412de40c4a69ef950a2e348983ff4afaaf921fd0d9351aa8be533",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T03-R08",
+      "task_id": "T03",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "mfg/sterile/media-fill-annex.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/capa-filter-integrity.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/validation-defense-bridge.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "adjudicated_solvable",
+      "final_source_aliases": "filesystem:mfg/sterile/media-fill-annex.pdf|filesystem:qms/capa/capa-filter-integrity.pdf|filesystem:qms/capa/validation-defense-bridge.docx",
+      "criterion_freeze_hash": "041dbffc66fb347c8332f5631d5ea72ab73f86a2b8586f51ccaf33e7efd74a8f",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T03-R09",
+      "task_id": "T03",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qa/pai-prep-agenda.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/validation/protocol-comment-log.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/capa-filter-integrity.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/capa/validation-defense-bridge.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qa/pai-prep-agenda.eml|filesystem:qa/validation/protocol-comment-log.xlsx|filesystem:qms/capa/capa-filter-integrity.pdf|filesystem:qms/capa/validation-defense-bridge.docx",
+      "criterion_freeze_hash": "095691ebac43ddc68ff749f535f1351070671b1d4836270c18020489a3590ae2",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R01",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/annex-crosswalk.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/ir/prior-response-2019.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/ir/response-template-v2.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:lab/stability/annex-crosswalk.xlsx|filesystem:mfg/process/ppq-summary.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx|filesystem:reg/ir/prior-response-2019.pdf|filesystem:reg/ir/response-template-v2.docx",
+      "criterion_freeze_hash": "6642b062382bbb3c6e109a0bb910b98ca64da7b5c76ea6de16ff44fe89323584",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R02",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/ir/draft-q13-notes.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/ra/agency-clock-reminder.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/ir/prior-response-2019.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/ir/response-template-v2.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/ir/draft-q13-notes.docx|filesystem:email/ra/agency-clock-reminder.eml|filesystem:mfg/process/ppq-summary.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx|filesystem:reg/ir/prior-response-2019.pdf|filesystem:reg/ir/response-template-v2.docx",
+      "criterion_freeze_hash": "d0d224825380d4cee9f8dbb7ff5c59641b523a63ccaf0a14ea4f0bad1bda8f51",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R03",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/ra/agency-clock-reminder.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-spec-tightening.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/ra/agency-clock-reminder.eml|filesystem:mfg/process/ppq-summary.pdf|filesystem:qms/change/cr-spec-tightening.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx",
+      "criterion_freeze_hash": "27e1ecfa2cc3a0f485d25a1d8d91d11c5ac34011aa563f65445eadf2b76a1d42",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R04",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/authority-q-tracker.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/ir/draft-q13-notes.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/annex-crosswalk.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/authority-q-tracker.xlsx|filesystem:desk/RA/ir/draft-q13-notes.docx|filesystem:lab/stability/annex-crosswalk.xlsx|filesystem:mfg/process/ppq-summary.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx",
+      "criterion_freeze_hash": "a4388e3aef765c45c853cd6df935cd4ff0c9a556588d34bc419858faa0ac7234",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R05",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/annex-crosswalk.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/ir/response-template-v2.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:lab/stability/annex-crosswalk.xlsx|filesystem:mfg/process/ppq-summary.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx|filesystem:reg/ir/response-template-v2.docx",
+      "criterion_freeze_hash": "f040d2cbf0d28ee022f0a5af352490a939bfbd9f17984e7a3090fb48812c1f12",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R06",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/ir/draft-q13-notes.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/ra/agency-clock-reminder.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/annex-crosswalk.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-spec-tightening.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/ir/draft-q13-notes.docx|filesystem:email/ra/agency-clock-reminder.eml|filesystem:lab/stability/annex-crosswalk.xlsx|filesystem:mfg/process/ppq-summary.pdf|filesystem:qms/change/cr-spec-tightening.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx",
+      "criterion_freeze_hash": "e6ef01ceef2bf5c105ce23eee7dfc36d60ec19be18b0b685918e1d2703659497",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R07",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "adjudicated_solvable",
+      "final_source_aliases": "filesystem:mfg/process/ppq-summary.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx",
+      "criterion_freeze_hash": "b2a3451feb2a1c16b5e16bd9a6be0177e10a8a318d3297ce8f682d2641c51b6e",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R08",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/ra/agency-clock-reminder.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-spec-tightening.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/ir/response-template-v2.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/ra/agency-clock-reminder.eml|filesystem:mfg/process/ppq-summary.pdf|filesystem:qms/change/cr-spec-tightening.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx|filesystem:reg/ir/response-template-v2.docx",
+      "criterion_freeze_hash": "64b2ac84fb527270ccde39cb60a825d74e1be1b36319a3178c3bbedad026a7ca",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R09",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/ir/draft-q13-notes.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/ra/agency-clock-reminder.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/ir/prior-response-2019.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/ir/draft-q13-notes.docx|filesystem:email/ra/agency-clock-reminder.eml|filesystem:mfg/process/ppq-summary.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx|filesystem:reg/ir/prior-response-2019.pdf",
+      "criterion_freeze_hash": "b8fe87951aecfadf157e2bb7c5b9f0abf60fd5d550d2248ad629cdfc25e3e3a7",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R10",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/ir/draft-q13-notes.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/ir/prior-response-2019.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/ir/response-template-v2.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/ir/draft-q13-notes.docx|filesystem:mfg/process/ppq-summary.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx|filesystem:reg/ir/prior-response-2019.pdf|filesystem:reg/ir/response-template-v2.docx",
+      "criterion_freeze_hash": "2e7c1996a756a0389b4c4638dc02b7e6a38b0b5bd8e0a91eb7db82a6ed308697",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R11",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/annex-crosswalk.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:lab/stability/annex-crosswalk.xlsx|filesystem:mfg/process/ppq-summary.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx",
+      "criterion_freeze_hash": "f97d7f2a2bb30a646fb6e4ca0cbaf78677af8f100c881c330ee0d04b3b3ef7c3",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R12",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/ra/agency-clock-reminder.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/annex-crosswalk.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-spec-tightening.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/ir/prior-response-2019.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/ra/agency-clock-reminder.eml|filesystem:lab/stability/annex-crosswalk.xlsx|filesystem:mfg/process/ppq-summary.pdf|filesystem:qms/change/cr-spec-tightening.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx|filesystem:reg/ir/prior-response-2019.pdf",
+      "criterion_freeze_hash": "c2521a78370174b5037f88608b7f5f8ecbaed3ddf4c19728783935d192537dff",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R13",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/ir/draft-q13-notes.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "email/ra/agency-clock-reminder.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:desk/RA/ir/draft-q13-notes.docx|filesystem:email/ra/agency-clock-reminder.eml|filesystem:mfg/process/ppq-summary.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx",
+      "criterion_freeze_hash": "addba5dd5627adb1bbb4715fc6a70df906c7790bc67c1b5a482c68e4015bc61b",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T04-R14",
+      "task_id": "T04",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/authority-q-tracker.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "desk/RA/ir/draft-q13-notes.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "lab/stability/annex-crosswalk.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/process/ppq-summary.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "reg/cmc/module-2-3-excerpt.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "adjudicated_solvable",
+      "final_source_aliases": "filesystem:desk/RA/authority-q-tracker.xlsx|filesystem:desk/RA/ir/draft-q13-notes.docx|filesystem:lab/stability/annex-crosswalk.xlsx|filesystem:mfg/process/ppq-summary.pdf|filesystem:reg/cmc/module-2-3-excerpt.docx",
+      "criterion_freeze_hash": "e0713aacc9679f473d15a0059723dc4ac5ba32b6d2a23a981e00c2e9eff801af",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T05-R01",
+      "task_id": "T05",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "it/systems/lims-audit-trail-export.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/audit/data-integrity-walkthrough.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:it/systems/lims-audit-trail-export.csv|filesystem:qms/audit/data-integrity-walkthrough.docx",
+      "criterion_freeze_hash": "c34a1e178d509a099acb01684249be9dae8e4cfdaba17a0588a26d491e4dca6f",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T05-R02",
+      "task_id": "T05",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "it/systems/lims-audit-trail-export.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/audit/data-integrity-walkthrough.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:it/systems/lims-audit-trail-export.csv|filesystem:qms/audit/data-integrity-walkthrough.docx",
+      "criterion_freeze_hash": "fe4d3da12ddb1ad409f4be264e8f995335f96c60a8686adc9babd76c536f90e4",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T05-R03",
+      "task_id": "T05",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "it/systems/lims-audit-trail-export.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/batch/alm-review-checklist.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/di/orphaned-result-list.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/records/batch-packet-index.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/records/hybrid-retention-matrix.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/audit/data-integrity-walkthrough.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:it/systems/lims-audit-trail-export.csv|filesystem:qa/batch/alm-review-checklist.docx|filesystem:qa/di/orphaned-result-list.xlsx|filesystem:qa/records/batch-packet-index.pdf|filesystem:qa/records/hybrid-retention-matrix.xlsx|filesystem:qms/audit/data-integrity-walkthrough.docx",
+      "criterion_freeze_hash": "529e09982d6ba6757fd678f4a1df219ca02077dd006affd4305bbf72a5fd3614",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T05-R05",
+      "task_id": "T05",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "it/systems/lims-audit-trail-export.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/batch/alm-review-checklist.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/records/hybrid-retention-matrix.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/audit/data-integrity-walkthrough.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:it/systems/lims-audit-trail-export.csv|filesystem:qa/batch/alm-review-checklist.docx|filesystem:qa/records/hybrid-retention-matrix.xlsx|filesystem:qms/audit/data-integrity-walkthrough.docx",
+      "criterion_freeze_hash": "6e984f8af47fbd9386fac5cb95fd30e96434ffa5d6331b7240b541d3626b1fce",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T05-R06",
+      "task_id": "T05",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qa/scan-backlog-status.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "it/systems/lims-audit-trail-export.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/batch/alm-review-checklist.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/records/batch-packet-index.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/audit/data-integrity-walkthrough.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qa/scan-backlog-status.eml|filesystem:it/systems/lims-audit-trail-export.csv|filesystem:qa/batch/alm-review-checklist.docx|filesystem:qa/records/batch-packet-index.pdf|filesystem:qms/audit/data-integrity-walkthrough.docx",
+      "criterion_freeze_hash": "cde9058de8ff499009b99f4c6847e5c2163215c27730cb0516c4040fb839b4a0",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T05-R07",
+      "task_id": "T05",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qa/scan-backlog-status.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "it/systems/lims-audit-trail-export.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/records/batch-packet-index.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/records/hybrid-retention-matrix.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/audit/data-integrity-walkthrough.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qa/scan-backlog-status.eml|filesystem:it/systems/lims-audit-trail-export.csv|filesystem:qa/records/batch-packet-index.pdf|filesystem:qa/records/hybrid-retention-matrix.xlsx|filesystem:qms/audit/data-integrity-walkthrough.docx",
+      "criterion_freeze_hash": "a044fda20d9eb4d8feb97d58cc59c2c9700b335d750300ac2365082a4e6e1111",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T05-R08",
+      "task_id": "T05",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "it/systems/lims-audit-trail-export.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/batch/alm-review-checklist.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/audit/data-integrity-walkthrough.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:it/systems/lims-audit-trail-export.csv|filesystem:qa/batch/alm-review-checklist.docx|filesystem:qms/audit/data-integrity-walkthrough.docx",
+      "criterion_freeze_hash": "f5b6dbd304cea330c953957f5e94b4876d82e2d9818cbea1867b07792942c3a7",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T05-R09",
+      "task_id": "T05",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "it/systems/lims-audit-trail-export.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/batch/alm-review-checklist.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/di/orphaned-result-list.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/records/hybrid-retention-matrix.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/audit/data-integrity-walkthrough.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:it/systems/lims-audit-trail-export.csv|filesystem:qa/batch/alm-review-checklist.docx|filesystem:qa/di/orphaned-result-list.xlsx|filesystem:qa/records/hybrid-retention-matrix.xlsx|filesystem:qms/audit/data-integrity-walkthrough.docx",
+      "criterion_freeze_hash": "b47b2ab90cbe2284d9736cd8ce870c25b9bf297efd5531467f8a80cfb8278f59",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T05-R11",
+      "task_id": "T05",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/qa/scan-backlog-status.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "it/systems/lims-audit-trail-export.csv"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/di/orphaned-result-list.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/records/batch-packet-index.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/records/hybrid-retention-matrix.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/audit/data-integrity-walkthrough.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/qa/scan-backlog-status.eml|filesystem:it/systems/lims-audit-trail-export.csv|filesystem:qa/di/orphaned-result-list.xlsx|filesystem:qa/records/batch-packet-index.pdf|filesystem:qa/records/hybrid-retention-matrix.xlsx|filesystem:qms/audit/data-integrity-walkthrough.docx",
+      "criterion_freeze_hash": "d5afad07265c569f279d788829c1d3ef35524a63b08cf8f8bfaeec9f2ab9cdc6",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T06-R01",
+      "task_id": "T06",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "mfg/materials/spec-comparison.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/incoming/skip-lot-justification.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-supplier-441.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "sqm/change/supplier-notification-047.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:mfg/materials/spec-comparison.xlsx|filesystem:qa/incoming/skip-lot-justification.docx|filesystem:qms/change/cr-supplier-441.docx|filesystem:sqm/change/supplier-notification-047.pdf",
+      "criterion_freeze_hash": "e6e57f3f131176ddb6a492f14c194766672d001f34d578ebddfdb7d451fa4c60",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T06-R02",
+      "task_id": "T06",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "qa/incoming/skip-lot-justification.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-supplier-441.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "sqm/change/supplier-notification-047.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:qa/incoming/skip-lot-justification.docx|filesystem:qms/change/cr-supplier-441.docx|filesystem:sqm/change/supplier-notification-047.pdf",
+      "criterion_freeze_hash": "6f0ecc1383c05bcee785bd98072f5fecfe00aa57bb6fded708bde2138078b586",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T06-R03",
+      "task_id": "T06",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "mfg/incoming/hold-release-log.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/materials/spec-comparison.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/incoming/skip-lot-justification.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-supplier-441.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "sqm/audit/last-onsite-report.pdf"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "sqm/change/supplier-notification-047.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:mfg/incoming/hold-release-log.xlsx|filesystem:mfg/materials/spec-comparison.xlsx|filesystem:qa/incoming/skip-lot-justification.docx|filesystem:qms/change/cr-supplier-441.docx|filesystem:sqm/audit/last-onsite-report.pdf|filesystem:sqm/change/supplier-notification-047.pdf",
+      "criterion_freeze_hash": "99d90687250f2b700f05f579f2b9229a01802b56fdfc55fb2b18e1cccbdfc0e6",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T06-R04",
+      "task_id": "T06",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "qa/incoming/skip-lot-justification.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "sqm/change/supplier-notification-047.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:qa/incoming/skip-lot-justification.docx|filesystem:sqm/change/supplier-notification-047.pdf",
+      "criterion_freeze_hash": "7b5f8caf1f09b0be52b2769500ed3b9b73af9b97689b5df91897985facb6e276",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T06-R05",
+      "task_id": "T06",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/sqm/change-control-thread.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/incoming/hold-release-log.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/incoming/skip-lot-justification.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-supplier-441.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "adjudicated_solvable",
+      "final_source_aliases": "filesystem:email/sqm/change-control-thread.eml|filesystem:mfg/incoming/hold-release-log.xlsx|filesystem:qa/incoming/skip-lot-justification.docx|filesystem:qms/change/cr-supplier-441.docx",
+      "criterion_freeze_hash": "7b37f65bb9a04bf1c015dc5f1ea15eaa6eb345735c17d0d344eeafec8c43dfeb",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T06-R06",
+      "task_id": "T06",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/sqm/change-control-thread.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/incoming/hold-release-log.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/materials/spec-comparison.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/incoming/skip-lot-justification.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-supplier-441.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/sqm/change-control-thread.eml|filesystem:mfg/incoming/hold-release-log.xlsx|filesystem:mfg/materials/spec-comparison.xlsx|filesystem:qa/incoming/skip-lot-justification.docx|filesystem:qms/change/cr-supplier-441.docx",
+      "criterion_freeze_hash": "e3a86a104cb1dac1d97a8da9ed70ff0451ea60ff27e6d9fe3ec378e96018d3c5",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T06-R07",
+      "task_id": "T06",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "email/sqm/change-control-thread.eml"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "mfg/materials/spec-comparison.xlsx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qa/incoming/skip-lot-justification.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-supplier-441.docx"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:email/sqm/change-control-thread.eml|filesystem:mfg/materials/spec-comparison.xlsx|filesystem:qa/incoming/skip-lot-justification.docx|filesystem:qms/change/cr-supplier-441.docx",
+      "criterion_freeze_hash": "3f0074b94e932f6c82b09c501e4bf2ed67c808dce70e94342932672874d96cbe",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    },
+    {
+      "criterion_id": "T06-R08",
+      "task_id": "T06",
+      "access_rule": "all_members_of_at_least_one_sufficient_set",
+      "sufficient_sets": [
+        [
+          {
+            "surface": "filesystem",
+            "locator": "qa/incoming/skip-lot-justification.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "qms/change/cr-supplier-441.docx"
+          },
+          {
+            "surface": "filesystem",
+            "locator": "sqm/change/supplier-notification-047.pdf"
+          }
+        ]
+      ],
+      "final_solvable": true,
+      "adjudication_result": "agree_solvable",
+      "final_source_aliases": "filesystem:qa/incoming/skip-lot-justification.docx|filesystem:qms/change/cr-supplier-441.docx|filesystem:sqm/change/supplier-notification-047.pdf",
+      "criterion_freeze_hash": "3f5829ab393682ab0a96964ce407e6d6d03f84d8a1065d41b4e2ab389eac1557",
+      "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+    }
+  ],
+  "map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712"
+}

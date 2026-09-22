@@ -1,0 +1,138 @@
+{
+  "schema": "eval-worlds-validation-results/v1",
+  "world_rebuilds": {
+    "attempted": 3,
+    "identical": 3,
+    "manifest_mismatches": 0,
+    "fingerprints": [
+      "19b7e3c8a24b1507278c155ffed68645344cc37af6823e3cfd0c87b13e7234a6",
+      "19b7e3c8a24b1507278c155ffed68645344cc37af6823e3cfd0c87b13e7234a6",
+      "19b7e3c8a24b1507278c155ffed68645344cc37af6823e3cfd0c87b13e7234a6"
+    ]
+  },
+  "seat_materializations": {
+    "attempted": 18,
+    "identical": 18,
+    "fingerprints": {
+      "EMP-RA-001": {
+        "workspace_sha256": [
+          "73339f145ea91a3c86f50cc66998b03e17ce66a8c8497372bb874b835713cedc",
+          "73339f145ea91a3c86f50cc66998b03e17ce66a8c8497372bb874b835713cedc",
+          "73339f145ea91a3c86f50cc66998b03e17ce66a8c8497372bb874b835713cedc"
+        ],
+        "tool_bundle_sha256": [
+          "7d0b158d62f4c3d0900bb770b20e8acf3f0e0beec8b0b5660ede169965e311d4",
+          "7d0b158d62f4c3d0900bb770b20e8acf3f0e0beec8b0b5660ede169965e311d4",
+          "7d0b158d62f4c3d0900bb770b20e8acf3f0e0beec8b0b5660ede169965e311d4"
+        ]
+      },
+      "EMP-MSAT-002": {
+        "workspace_sha256": [
+          "f4fab15ffd2d5d261435a7d45c9a0237b5475e56a0eefbe2e0608900ebdf85e3",
+          "f4fab15ffd2d5d261435a7d45c9a0237b5475e56a0eefbe2e0608900ebdf85e3",
+          "f4fab15ffd2d5d261435a7d45c9a0237b5475e56a0eefbe2e0608900ebdf85e3"
+        ],
+        "tool_bundle_sha256": [
+          "62fd647c353f82a452def62bfe069f72213af2d457b89e8e0835395b3ab30324",
+          "62fd647c353f82a452def62bfe069f72213af2d457b89e8e0835395b3ab30324",
+          "62fd647c353f82a452def62bfe069f72213af2d457b89e8e0835395b3ab30324"
+        ]
+      },
+      "EMP-MSAT-003": {
+        "workspace_sha256": [
+          "6745f662e7fcbccb1532f4079d1b53cf436c9ccc1061914b90f4d0eae350a286",
+          "6745f662e7fcbccb1532f4079d1b53cf436c9ccc1061914b90f4d0eae350a286",
+          "6745f662e7fcbccb1532f4079d1b53cf436c9ccc1061914b90f4d0eae350a286"
+        ],
+        "tool_bundle_sha256": [
+          "234c094db7dc138e50a7bffc17bc7a08983b85b2a31746a2d9bb03ccf0b9f2e7",
+          "234c094db7dc138e50a7bffc17bc7a08983b85b2a31746a2d9bb03ccf0b9f2e7",
+          "234c094db7dc138e50a7bffc17bc7a08983b85b2a31746a2d9bb03ccf0b9f2e7"
+        ]
+      },
+      "EMP-QA-001": {
+        "workspace_sha256": [
+          "39d62f4b7fa77f6754861cf3fd678c40e19576e6ee19da07c55c9b443fbe74a5",
+          "39d62f4b7fa77f6754861cf3fd678c40e19576e6ee19da07c55c9b443fbe74a5",
+          "39d62f4b7fa77f6754861cf3fd678c40e19576e6ee19da07c55c9b443fbe74a5"
+        ],
+        "tool_bundle_sha256": [
+          "feb2c26b664859c2122e13bd10acc558b6c1bb1b3f418baf64d78f65f39485e6",
+          "feb2c26b664859c2122e13bd10acc558b6c1bb1b3f418baf64d78f65f39485e6",
+          "feb2c26b664859c2122e13bd10acc558b6c1bb1b3f418baf64d78f65f39485e6"
+        ]
+      },
+      "EMP-SQ-002": {
+        "workspace_sha256": [
+          "c7d3938059923fa79ffc8293d7ba0090a78c0766d9086225ef58e6cf2afc9f7d",
+          "c7d3938059923fa79ffc8293d7ba0090a78c0766d9086225ef58e6cf2afc9f7d",
+          "c7d3938059923fa79ffc8293d7ba0090a78c0766d9086225ef58e6cf2afc9f7d"
+        ],
+        "tool_bundle_sha256": [
+          "8ba4248ae17fb89681f1d5cf365566a0343d91d6238db9e503cbf46badd381e3",
+          "8ba4248ae17fb89681f1d5cf365566a0343d91d6238db9e503cbf46badd381e3",
+          "8ba4248ae17fb89681f1d5cf365566a0343d91d6238db9e503cbf46badd381e3"
+        ]
+      },
+      "EMP-QC-001": {
+        "workspace_sha256": [
+          "7956237250b1837f78ef874747d3d554f5fc377ad673540dffd3843fe19e4096",
+          "7956237250b1837f78ef874747d3d554f5fc377ad673540dffd3843fe19e4096",
+          "7956237250b1837f78ef874747d3d554f5fc377ad673540dffd3843fe19e4096"
+        ],
+        "tool_bundle_sha256": [
+          null,
+          null,
+          null
+        ]
+      }
+    }
+  },
+  "task_independence": {
+    "pairs_tested": 2,
+    "pairs_identical": 2,
+    "staged_tasks_tested": 8,
+    "staged_tasks_identical": 8
+  },
+  "access_audit": {
+    "expected_authorized": 1597,
+    "retained_authorized": 1597,
+    "unauthorized_exposures": 0,
+    "verifier_overlaps_unreviewed": 0,
+    "reviewed_hash_exceptions": [
+      {
+        "sha256": "d59b52a0f5af7de0ebdd15bea05cf8854dcbf1b8e99eb6f6090493c18e9fa8e2",
+        "rationale": "Intentional copy of a candidate-visible protocol used as a verifier citation source."
+      }
+    ]
+  },
+  "evidence_map": {
+    "criteria": 72,
+    "criteria_solvable": 72,
+    "reviewer_1_solvable": 67,
+    "reviewer_2_solvable": 69,
+    "solvability_exact_agreement": 0.9166666666666666,
+    "solvability_kappa": 0.2087912087912084,
+    "solvability_gwet_ac1": 0.9068965517241379,
+    "solvability_kappa_bootstrap_ci": {
+      "lower": -0.05150214592274744,
+      "upper": 0.42426620195071235
+    },
+    "bootstrap_replicates": 2000,
+    "locator_jaccard_mean": 0.7680059523809523,
+    "locator_jaccard_median": 0.775,
+    "adjudicated_criteria": 7,
+    "solvability_contingency": {
+      "both_solvable": 65,
+      "both_not_solvable": 1,
+      "reviewer_1_only": 2,
+      "reviewer_2_only": 4
+    },
+    "final_map_freeze_hash": "9dc55d22c0dbc828f812b95dff28a35bfc9881f15501ae5d7b8fc1ff39876712",
+    "final_map_frozen_at": "2026-08-27T18:00:00Z"
+  },
+  "seeded_failures": {
+    "attempted": 4,
+    "detected": 4
+  }
+}

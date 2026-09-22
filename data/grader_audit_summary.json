@@ -1,0 +1,23 @@
+{
+  "schema": "eval-worlds-grader-audit-summary/v1",
+  "sampled": 240,
+  "rateable": 240,
+  "raw_agreement": 0.9375,
+  "cohen_kappa": 0.8530612244897959,
+  "contingency": {
+    "both_pass": 159,
+    "both_fail": 66,
+    "expert_only_pass": 4,
+    "grader_only_pass": 11
+  },
+  "by_condition": {
+    "task_first": {
+      "n": 120,
+      "raw_agreement": 0.95
+    },
+    "world_first": {
+      "n": 120,
+      "raw_agreement": 0.925
+    }
+  }
+}

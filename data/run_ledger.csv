@@ -1,0 +1,193 @@
+run_id,task_id,agent_id,condition,environment_instance,block,scheduled_order_within_task_agent,status,criterion_count,accessed_count,not_accessed_count,unknown_count,pass_count,model_version_string,files_inspected,tool_calls,tool_calls_before_first_access,run_record_sha256
+run-001,T01,opus5,world_first,world-first,1,1,completed,11,10,1,0,9,claude-opus-5,20,23,19,3aa3cb12fe3bbda8a1a5220aadd8b4fded647dc3b70afd102937840def23e0fb
+run-002,T01,opus5,task_first,task-first curator 2,1,2,completed,11,10,1,0,8,claude-opus-5,19,33,8,ee2102b5a89af247556c8f2b819ad108846e1a3c98fa2aa360de4968d58c1542
+run-003,T01,opus5,world_first,world-first,1,3,completed,11,7,4,0,7,claude-opus-5,18,19,18,91bd0710120d02d2744eb1b553b0c0995776786662c2fb798a566cf96e7fca63
+run-004,T01,opus5,task_first,task-first curator 1,1,4,completed,11,11,0,0,9,claude-opus-5,17,36,5,c58c8c531d96ce2350f32a1faaeaa0de8db81ae7651f07f267d0ad48f4ddf6ce
+run-005,T01,opus5,world_first,world-first,2,5,completed,11,9,2,0,6,claude-opus-5,48,47,11,1193cd92dd34f7169d1156d4484601f5f28c9bfa1a1324b17bf1ec6c02e9395f
+run-006,T01,opus5,task_first,task-first curator 2,2,6,completed,11,10,1,0,8,claude-opus-5,9,17,7,1641a983d64eabcce5f5a28e070c2f4db361d35a797f8fd6ed7b4f596f0f0f87
+run-007,T01,opus5,world_first,world-first,2,7,completed,11,9,1,1,10,claude-opus-5,23,29,12,24899d2676b7d1222522ad9ff8239fbea99439dc83a461f464427a2b86f9eb22
+run-008,T01,opus5,task_first,task-first curator 1,2,8,completed,11,11,0,0,9,claude-opus-5,18,33,10,e0d12be9e57759fad345fde930d3c8ec1de89a5a9e7a954d35870487c4e9558b
+run-009,T01,grok,world_first,world-first,1,1,completed,11,9,1,1,9,grok-4.6,30,40,17,209adc9b5b1c6e6ff83c82f4fa06637985efa99d03c13f1921760ec0493ae3d6
+run-010,T01,grok,world_first,world-first,1,2,completed,11,8,3,0,5,grok-4.6,36,54,20,3101559fac9ee81ff8501e02a6d07f03ceb55e00f23eceae88baabe9e11da006
+run-011,T01,grok,task_first,task-first curator 1,1,3,completed,11,10,1,0,10,grok-4.6,9,18,10,dfca025a32eaa8256c543b25ef85d2d657ede7e21dafc812f94c0ca3c97d0258
+run-012,T01,grok,task_first,task-first curator 2,1,4,completed,11,9,1,1,9,grok-4.6,16,29,8,4d24bb4ea8174731eeec08b8c896cc70965b641cac625915ddafce057b2557f7
+run-013,T01,grok,world_first,world-first,2,5,completed,11,6,3,2,7,grok-4.6,33,48,8,5fdf1e92b941d4c2e77d2a6ab09d453dff6d5c41087a9c5c64214fef95497d24
+run-014,T01,grok,task_first,task-first curator 1,2,6,completed,11,9,2,0,9,grok-4.6,10,32,4,251505bde477358444662769f7b40199b89ad9f369a9ee3bc1976d6d3e978437
+run-015,T01,grok,world_first,world-first,2,7,completed,11,9,2,0,5,grok-4.6,31,34,8,581ad2024d905b66a3ce98f625c8b55b1162a055dae992b7f8367ed718df1f04
+run-016,T01,grok,task_first,task-first curator 2,2,8,completed,11,9,2,0,8,grok-4.6,11,23,7,86e95731d405861949174ac27ccdcc9d1c6e0ead855d9b732e5768a4a25b6c0d
+run-017,T01,sol,task_first,task-first curator 2,1,1,completed,11,9,2,0,5,gpt-5.6-sol,15,32,4,257450aefbc7336e9db728c477c74cf9a6937976e2d9519ab56f01a55af49671
+run-018,T01,sol,world_first,world-first,1,2,completed,11,8,3,0,5,gpt-5.6-sol,27,26,7,f71d9c5f8d340615bc7755c063a3a5f363f2e69a1588bb379189504a4c7a518d
+run-019,T01,sol,task_first,task-first curator 1,1,3,completed,11,10,1,0,8,gpt-5.6-sol,15,20,5,51a8e4f8ac8333c4ca663e713b42dfe5b35d5e76b264c1cfad500afaff44806d
+run-020,T01,sol,world_first,world-first,1,4,completed,11,7,4,0,7,gpt-5.6-sol,33,32,8,413a756b369561e026faab121c1d8713f9f9e0accf223ff2f64d0086efeb3599
+run-021,T01,sol,world_first,world-first,2,5,completed,11,6,4,1,6,gpt-5.6-sol,35,32,9,ece736458e0b51a8617feca16c54dad7d85b5c4b9a48b94ac0ae8250d380e16f
+run-022,T01,sol,task_first,task-first curator 1,2,6,completed,11,7,3,1,7,gpt-5.6-sol,19,28,4,d6b7ca21d73d9aab90f23346e0765d04fa4498e5a55dcbf677a0268d20e74892
+run-023,T01,sol,world_first,world-first,2,7,completed,11,8,2,1,9,gpt-5.6-sol,36,45,11,f48bc5286912525deec0c15c34883dd806c76102b85ed6b71959b09f2a4f1e5d
+run-024,T01,sol,task_first,task-first curator 2,2,8,completed,11,10,1,0,8,gpt-5.6-sol,17,40,8,71d0238d84799f2ef64b8f7979836a4f39b9f357dc015de2d151c0aae7352f13
+run-025,T02,opus5,task_first,task-first curator 1,1,1,completed,11,7,1,3,8,claude-opus-5,19,27,26,f699bf6a75b9bb5539698cd27707642b2f830f4ef2295f3281536e8b77f3047a
+run-026,T02,opus5,world_first,world-first,1,2,completed,11,9,2,0,8,claude-opus-5,26,37,20,9497be6e001668a1571d1540b77ffa8727a8d704f931984217a32d6ab50778f6
+run-027,T02,opus5,world_first,world-first,1,3,completed,11,11,0,0,10,claude-opus-5,34,30,10,c37d2c7a7d4b34bd5fd793a10a39a71b1239f8a7c7e911f864b5ad68866cfe2b
+run-028,T02,opus5,task_first,task-first curator 2,1,4,completed,11,10,1,0,9,claude-opus-5,11,19,6,30d8d0481b4281921f4b6c2c45d64ba103733e8336623811f0757c197ee9e10f
+run-029,T02,opus5,world_first,world-first,2,5,completed,11,10,1,0,11,claude-opus-5,19,19,18,1b99f844ad36590d46dc423caedd39e4b4dc0f1094104fa59dc61c524d5e5a8e
+run-030,T02,opus5,task_first,task-first curator 2,2,6,completed,11,9,1,1,8,claude-opus-5,16,22,15,08d12be52679cc68b38b2d0560c87c1683ae1782c422db898c4c4c4817f60609
+run-031,T02,opus5,task_first,task-first curator 1,2,7,completed,11,11,0,0,10,claude-opus-5,17,20,3,74548b3eff2f109f7c85447cd1e5c8c39b7b0df6730e96f852e7b7055d4dfee1
+run-032,T02,opus5,world_first,world-first,2,8,completed,11,8,2,1,8,claude-opus-5,39,52,10,9e0038128ba5358e8181831eb0dfefd0e3a5006a154c20360ba085b5bece3687
+run-033,T02,grok,world_first,world-first,1,1,completed,11,7,4,0,6,grok-4.6,31,37,15,ea6730c5a5a79d8eef762ec29c3a8ae949d65b3a2de926ff11d2439a0c7ee0d9
+run-034,T02,grok,task_first,task-first curator 1,1,2,completed,11,11,0,0,6,grok-4.6,15,27,4,7888a270d330c52323b16e78f27d0354f796c0791a9af36c3286fa92f4a67b25
+run-035,T02,grok,task_first,task-first curator 2,1,3,completed,11,11,0,0,9,grok-4.6,21,32,5,21d72e22fee15e056f0d56d5da9abf34b3955996ff4205262dc8387bdec3692f
+run-036,T02,grok,world_first,world-first,1,4,completed,11,9,2,0,7,grok-4.6,40,33,14,58d1eda471a198f71c3d4430fbacc76e38edcf19338b38e2eeec41213941a7e9
+run-037,T02,grok,world_first,world-first,2,5,completed,11,10,1,0,9,grok-4.6,17,29,9,4a53d3b3ee56737dd8a6d8a5f2751772e1f51afbe08d7c96cfc826dbf868de8c
+run-038,T02,grok,task_first,task-first curator 2,2,6,completed,11,9,2,0,7,grok-4.6,17,24,7,dc91f25837229f4e501793d7923d5e514d8db73b77a765c71ab413daff33bac6
+run-039,T02,grok,world_first,world-first,2,7,completed,11,8,2,1,8,grok-4.6,41,35,10,72f878c549f06e574a4168a860f33dac3c04dc9853a294d23dc9419f1013e71c
+run-040,T02,grok,task_first,task-first curator 1,2,8,completed,11,10,1,0,8,grok-4.6,19,31,4,555701057171391e2f797bc7fdf4440672c6eb77d6000729f40a058452425a72
+run-041,T02,sol,task_first,task-first curator 1,1,1,completed,11,9,2,0,9,gpt-5.6-sol,13,20,6,df4e7feda6803569c181e6947592b78c158fb61a6c8e5ac30a177a7b7c161cae
+run-042,T02,sol,world_first,world-first,1,2,completed,11,7,4,0,4,gpt-5.6-sol,27,38,10,88830958981bcf6ee660577b109b83bbb6684f3181e99872a1d2cd78295b1eff
+run-043,T02,sol,world_first,world-first,1,3,completed,11,7,4,0,6,gpt-5.6-sol,46,49,18,580dc6002911122f950df016ae50be6013875ea1ba3b563efddeca3a1bdb8e2e
+run-044,T02,sol,task_first,task-first curator 2,1,4,completed,11,10,1,0,8,gpt-5.6-sol,19,35,5,6f56f4770852c3c1973dbc956d6f9129096149d224c6e31b95edb621e1db4f1c
+run-045,T02,sol,world_first,world-first,2,5,completed,11,5,6,0,5,gpt-5.6-sol,31,32,11,a5b4f5a50f6ae10bd4d4e3ea8176bd1d42fa4d7c8a1edc3f176a8a8fea303865
+run-046,T02,sol,world_first,world-first,2,6,completed,11,7,3,1,9,gpt-5.6-sol,25,33,5,f2adfabb0e8f455b619a0d1aeb7a2f684848225b51040cf0f4c7ad8b58069829
+run-047,T02,sol,task_first,task-first curator 2,2,7,completed,11,11,0,0,6,gpt-5.6-sol,10,14,6,839c7375b4367cc4b83c3422377fb919d6936a16ca1faa05e4b2899cce483e0e
+run-048,T02,sol,task_first,task-first curator 1,2,8,completed,11,10,1,0,9,gpt-5.6-sol,23,25,5,f4942581e41c1546bec54486708f88ecb4b263f4dd7e8408bd9270b26d9a63e1
+run-049,T03,opus5,task_first,task-first curator 1,1,1,completed,9,8,1,0,9,claude-opus-5,13,22,4,1ef23f286db3948256a15e0d315b48c5d2d4a3c7b94a9c971afdb932eeb44e69
+run-050,T03,opus5,world_first,world-first,1,2,completed,9,9,0,0,8,claude-opus-5,13,18,17,b4b1cfff767c630c1e9c4c850601c68f10f3bc450d7f116628cb8e111e75a9f4
+run-051,T03,opus5,world_first,world-first,1,3,completed,9,8,1,0,9,claude-opus-5,37,41,8,8391cd935ef29fe1f49cb16085d8c90dfc1579ebfbc9ca28fd15b19ef37ffff4
+run-052,T03,opus5,task_first,task-first curator 2,1,4,completed,9,8,1,0,7,claude-opus-5,14,31,5,412dcb8d7bb337a320738044c2c4510b318ea83224b2d52885603d1ec7cf99d7
+run-053,T03,opus5,world_first,world-first,2,5,completed,9,8,1,0,9,claude-opus-5,19,25,15,680335ffb5f68ee6018064af5869c1ef8cfff6fe140e7d8d3bfd8b1e3450b044
+run-054,T03,opus5,world_first,world-first,2,6,completed,9,9,0,0,9,claude-opus-5,26,31,10,138fc48afba6fd4d0fb3318eee90309e0119edcee3e0c864e8be78aacdaade3b
+run-055,T03,opus5,task_first,task-first curator 1,2,7,completed,9,9,0,0,7,claude-opus-5,8,21,4,55351829f6b6cf4b21253d27ad1df43c411b7e8b33168d41019809fc6009f4a7
+run-056,T03,opus5,task_first,task-first curator 2,2,8,completed,9,8,1,0,8,claude-opus-5,12,19,8,b4f88441ea3466b57ed7d5dbf4e0f231b6ab398ccd1343c2375560b8e7a09395
+run-057,T03,grok,task_first,task-first curator 2,1,1,completed,9,8,1,0,7,grok-4.6,15,21,8,44f89de7b32b328503b35ebb610183198b461ae7234eadad11e1dac5704fcb81
+run-058,T03,grok,world_first,world-first,1,2,completed,9,5,3,1,5,grok-4.6,31,46,7,5e31ae10441d914e9a18c90f8174a134065e73adf22debdfb897b0408b3fc350
+run-059,T03,grok,task_first,task-first curator 1,1,3,completed,9,6,3,0,5,grok-4.6,11,20,4,c61cd5dfd6ccb801e62e98c5b96148e612e09b3391dd0736d6f733085140080f
+run-060,T03,grok,world_first,world-first,1,4,completed,9,8,1,0,7,grok-4.6,24,38,9,63ea13c15965772a8fd612e57b5b37e716b182bd45dd46e129a7ac35c5531c4f
+run-061,T03,grok,task_first,task-first curator 1,2,5,completed,9,8,1,0,8,grok-4.6,12,20,4,39352c3b9025ac11b2c7524592606092f56643d28fe383f43929c0f903aed878
+run-062,T03,grok,world_first,world-first,2,6,completed,9,7,2,0,7,grok-4.6,35,47,5,76417034eb8519c81fe53f449162aac6596e5a444ea919b7e8bac668a016edce
+run-063,T03,grok,world_first,world-first,2,7,completed,9,7,2,0,6,grok-4.6,24,20,11,de4638869dd1880f1f5b0fb7df5a99209deec68f631cba22e2d0eece953c00c3
+run-064,T03,grok,task_first,task-first curator 2,2,8,completed,9,6,3,0,5,grok-4.6,15,36,6,c3fb624b6eca9187e04e553b96e0c37c1e3a463889f74b9a7b60a787a08481db
+run-065,T03,sol,world_first,world-first,1,1,completed,9,6,3,0,7,gpt-5.6-sol,33,45,8,bf3a4b37b1ec931bd717e276d904f4c9741d0da9225e025cebf5869103a240b0
+run-066,T03,sol,world_first,world-first,1,2,completed,9,6,3,0,6,gpt-5.6-sol,38,51,8,1e9c11ef7dd0d8bac8d8dd3d78d7d60a18140b3bc1cc0304dd1811443d414829
+run-067,T03,sol,task_first,task-first curator 1,1,3,completed,9,6,3,0,3,gpt-5.6-sol,11,23,6,e6bbd4007cf35f87ce1de3cf3aaa2e7d243edce627397c7be595232a8fe57810
+run-068,T03,sol,task_first,task-first curator 2,1,4,completed,9,5,4,0,1,gpt-5.6-sol,17,38,5,fae342a657295a4c7c5350b91de9da17ffaf2b52aac840d97b2d4a27cea98c3f
+run-069,T03,sol,task_first,task-first curator 1,2,5,completed,9,4,4,1,6,gpt-5.6-sol,19,29,8,14e37eb5118f9c61edb721bb167a7ae7c953c11dd47bd1b125969640725990a5
+run-070,T03,sol,world_first,world-first,2,6,completed,9,3,6,0,5,gpt-5.6-sol,23,29,7,67c0c4f81a6aa7e7a23de717746a5fe365f712f0e4eb6e2a50934fa488502d64
+run-071,T03,sol,world_first,world-first,2,7,completed,9,8,1,0,7,gpt-5.6-sol,23,30,18,20aa4430febc2d32f9a4f1000fc0526bd7d721498578337d55c995ddbcbd13ca
+run-072,T03,sol,task_first,task-first curator 2,2,8,completed,9,8,1,0,5,gpt-5.6-sol,12,39,5,25ecc9bb8ec2d586343a944e35e6940a98082fae4d8ebead4f8004809971aefa
+run-073,T04,opus5,task_first,task-first curator 1,1,1,completed,14,13,0,1,11,claude-opus-5,10,19,9,2a330906fff39916e15a8c1edbe066280e2fa60d1a9898176ef87632fea81d7b
+run-074,T04,opus5,world_first,world-first,1,2,completed,14,10,4,0,11,claude-opus-5,28,27,18,78b1a9e4fe47ed4cdba244910c0320b92c3eaedb6ddc735b4a5c6850563dd763
+run-075,T04,opus5,world_first,world-first,1,3,completed,14,7,5,2,9,claude-opus-5,38,33,5,7ecd15343679eed7cd8b9bfb5260f50a20fba814146e40d966133ce3497ccd5b
+run-076,T04,opus5,task_first,task-first curator 2,1,4,completed,14,14,0,0,14,claude-opus-5,12,13,5,6197fcd231b9e920a5d332b254d6697d1d7409a0b8f3ef5b46391e2d28befb49
+run-077,T04,opus5,world_first,world-first,2,5,completed,14,13,1,0,13,claude-opus-5,20,28,22,1346239700e1fdeb9fb375eef2b06dc28edc49fb9c4646c1c6c93994c33e03b3
+run-078,T04,opus5,task_first,task-first curator 1,2,6,completed,14,13,1,0,11,claude-opus-5,17,29,8,c624770c22ef4129e7e90828a5d6826cc317007a100a777e84a5a2fdd32338f6
+run-079,T04,opus5,task_first,task-first curator 2,2,7,completed,14,14,0,0,11,claude-opus-5,13,15,7,105aa9f461c3de1b59fb0664490e9a3e5522279f83d644f887de260e4ef94862
+run-080,T04,opus5,world_first,world-first,2,8,completed,14,10,4,0,9,claude-opus-5,39,53,6,abbd817011a99c551e78c1b3cca2ae671a0a5b635be6b545163473f91b8fe1dd
+run-081,T04,grok,world_first,world-first,1,1,completed,14,10,4,0,9,grok-4.6,36,39,9,63ce9d4713b7e5d7e86db06dc538248589682a822f6a302b304d77567b96e266
+run-082,T04,grok,task_first,task-first curator 1,1,2,completed,14,14,0,0,13,grok-4.6,22,35,4,c3347aa4d8a983ccc82443bff92296c69c50e5a4fb92aa1ff85273acbbec5ee1
+run-083,T04,grok,world_first,world-first,1,3,completed,14,7,7,0,6,grok-4.6,45,54,19,02a27d4464e0316ba2706bf057f06faa0cd7d116fd2e6048a86e1e892cbc2a6c
+run-084,T04,grok,task_first,task-first curator 2,1,4,completed,14,13,1,0,10,grok-4.6,16,27,3,239e0d17c4ec79d75ff0042e06f58d15f33de1041238a4afb7fbe5f7bd66f28b
+run-085,T04,grok,world_first,world-first,2,5,completed,14,10,4,0,11,grok-4.6,35,42,16,41f130c8e36a41abc0bac12ffde3b44548857675fd3c3d88cf09c72d582d5edb
+run-086,T04,grok,world_first,world-first,2,6,completed,14,11,3,0,12,grok-4.6,25,33,8,6c0fc24a0dc41bc0244397a4608dfc3b55b657eccd2b198720564cf1170f9354
+run-087,T04,grok,task_first,task-first curator 2,2,7,completed,14,14,0,0,13,grok-4.6,26,46,5,26c2edf15422eddf80a72b22804fb602f4936a41172769197cf231f3541df7d6
+run-088,T04,grok,task_first,task-first curator 1,2,8,completed,14,13,1,0,12,grok-4.6,13,13,5,7721d22aa250960198ea63827150fa06ff74f4a11160dfa64f0b7eaaee4f716a
+run-089,T04,sol,world_first,world-first,1,1,completed,14,9,5,0,6,gpt-5.6-sol,57,56,5,7dc8b986e8e86c8bb2683e14ed335c2875eaa56e40a49bae36f3c1d04cf82167
+run-090,T04,sol,task_first,task-first curator 1,1,2,completed,14,13,1,0,10,gpt-5.6-sol,23,31,4,5d504c94d097c83323ab70a05df8fd89026c4a8766ea72eb28659a8fd192eea3
+run-091,T04,sol,task_first,task-first curator 2,1,3,completed,14,14,0,0,10,gpt-5.6-sol,20,35,5,5f16f9999605710a394e5d8a5f297b4fab9ed8bee067060a1ceca4b44b955e18
+run-092,T04,sol,world_first,world-first,1,4,completed,14,8,5,1,10,gpt-5.6-sol,40,49,25,76c3d158ec2a3e9658996719d561abc86df622c043df1005471167f1f13045c7
+run-093,T04,sol,task_first,task-first curator 2,2,5,completed,14,10,3,1,7,gpt-5.6-sol,10,32,6,5f854d87a98f332d2694da55ec2d44bd40befc581e7930f91cf9abafd1fc1c0e
+run-094,T04,sol,world_first,world-first,2,6,completed,14,9,4,1,8,gpt-5.6-sol,26,36,16,46cd2e26bed7703d9ed9969133aaae2dcdbe689662f3fac0b4d3f3645b7dd214
+run-095,T04,sol,world_first,world-first,2,7,completed,14,11,1,2,8,gpt-5.6-sol,26,37,18,b808b462f31884290f450b35b7a1fb4714e5c8ffe11fbf4ad9a61c5501fa7ea3
+run-096,T04,sol,task_first,task-first curator 1,2,8,completed,14,13,0,1,9,gpt-5.6-sol,17,21,4,4a016b901eac645a28f23c4432901a4e8b05a7f7c6a9b085e92f8f0ffff2af16
+run-097,T05,opus5,world_first,world-first,1,1,completed,9,7,2,0,4,claude-opus-5,27,25,6,3ebd7a53ca69ac8da035bbf2dcec32d734f51026c2bb9f40c496745b3d26cc9c
+run-098,T05,opus5,task_first,task-first curator 2,1,2,completed,9,8,1,0,8,claude-opus-5,17,19,4,09e0992508f03939a0a7d6371c317e8a47d3f99623573fce69bb303fd193a6b2
+run-099,T05,opus5,world_first,world-first,1,3,completed,9,6,3,0,6,claude-opus-5,24,35,9,eb3b0bcea3009553f4193390dfe41804d3391a7f32a493b7ccf840c13369f17e
+run-100,T05,opus5,task_first,task-first curator 1,1,4,completed,9,8,0,1,8,claude-opus-5,21,20,13,7e87aa099e893b5e46d0fb295c50c9f93a44ab20f04364277efc9ba842c16b78
+run-101,T05,opus5,world_first,world-first,2,5,completed,9,6,3,0,7,claude-opus-5,29,37,9,4fe569cc115e70507015abf02434b11c1968ce1f29c6974877c51e3c5b50a521
+run-102,T05,opus5,task_first,task-first curator 2,2,6,completed,9,8,1,0,9,claude-opus-5,11,12,11,bf43b378fcf3704fbf7ff0b985f6d431ac627d3f9152f80a061ea2732afa43d1
+run-103,T05,opus5,world_first,world-first,2,7,completed,9,8,0,1,9,claude-opus-5,12,15,10,efe7e5335f12c85452b7efa35ed3298efe4ef5d0d6ec663e2b5af4d188603d0e
+run-104,T05,opus5,task_first,task-first curator 1,2,8,completed,9,8,1,0,9,claude-opus-5,8,10,7,3de76081205d38d60f24557a4b6938734137e0fa826ba1f81df0d015f948912c
+run-105,T05,grok,task_first,task-first curator 1,1,1,completed,9,7,2,0,8,grok-4.6,13,12,5,97a71a75d0811d650e4ab7d2102e94d912a4f5f5a38e5322a9f3d88008e3e896
+run-106,T05,grok,world_first,world-first,1,2,completed,9,5,4,0,6,grok-4.6,22,26,10,f873da4c2d3b3fc122f65d272137ee75d464f6e23fa9d75b5fa38985357ad4cc
+run-107,T05,grok,task_first,task-first curator 2,1,3,completed,9,8,1,0,6,grok-4.6,10,9,8,9d97f91221089b591be9ff7e094858af489d0f5887ffcbce330b7ad4858ea645
+run-108,T05,grok,world_first,world-first,1,4,completed,9,8,1,0,8,grok-4.6,27,24,18,dd5e9ae51c62e7fb69dc871814287eb264e3815ed8d2f1190486a632876fed19
+run-109,T05,grok,world_first,world-first,2,5,completed,9,8,1,0,8,grok-4.6,27,32,19,11bc8848401d22da36d4300b2ffde004d6cc72c94e8e21b67faab25bc96fdccb
+run-110,T05,grok,task_first,task-first curator 2,2,6,completed,9,7,1,1,8,grok-4.6,11,11,6,3851e4497f0b0afa4661080fac6cc72db2723730d124f30c10f526d4ce006dbb
+run-111,T05,grok,world_first,world-first,2,7,completed,9,7,2,0,4,grok-4.6,16,20,11,60cd772cd702d4fc002d14c2ae0b5e90c16287daeba0275fa6425efe07fb940f
+run-112,T05,grok,task_first,task-first curator 1,2,8,completed,9,9,0,0,8,grok-4.6,20,13,5,5877932c94f0fa23c4f0e521c676100e0025cb48240608d781fb7ceb2efb94b9
+run-113,T05,sol,world_first,world-first,1,1,completed,9,7,2,0,7,gpt-5.6-sol,44,54,15,b9623471799bb9401cd30587087e33d4a724d43b5cf8e4dc31f9bf01b130824b
+run-114,T05,sol,task_first,task-first curator 1,1,2,completed,9,8,1,0,7,gpt-5.6-sol,16,14,6,258f3cac725009d3c1dadd540b73ff72d00a5709186e227f13575a64b0246f43
+run-115,T05,sol,world_first,world-first,1,3,completed,9,3,6,0,3,gpt-5.6-sol,38,33,10,65cd943cf073fadd05dce91cae4e1c998e00def92453bc0f7482e578ff2d6298
+run-116,T05,sol,task_first,task-first curator 2,1,4,completed,9,8,0,1,8,gpt-5.6-sol,20,19,7,ae133eab49ddfe444d3b9082aa232ac52aefe8b2d92f58d91b20500c9e03b17a
+run-117,T05,sol,world_first,world-first,2,5,completed,9,8,1,0,5,gpt-5.6-sol,42,43,10,ad190b57942970770145cb93abc37d5f5c1b8745963bc79beeec9f7ad45ceacf
+run-118,T05,sol,task_first,task-first curator 2,2,6,completed,9,9,0,0,8,gpt-5.6-sol,30,30,7,14f2e0c43431feec97c6b9d8aafdd58865204645ecc01433c767fc3bcc1a4b56
+run-119,T05,sol,task_first,task-first curator 1,2,7,completed,9,9,0,0,4,gpt-5.6-sol,15,16,6,f9e152f6a1d498033a12d1b8ca658d573bf2f39014e4f612521db9f000d4549d
+run-120,T05,sol,world_first,world-first,2,8,completed,9,6,3,0,5,gpt-5.6-sol,22,32,13,2c3296e789b87a9e177feec0d60afa142981df80d1b1784fedfa74d7803e9880
+run-121,T06,opus5,world_first,world-first,1,1,completed,8,6,2,0,6,claude-opus-5,24,30,9,2adfc5065ff9ed096d4b2a9b9a73299df5293b55a6b11d1780003b7a4403bc27
+run-122,T06,opus5,world_first,world-first,1,2,completed,8,5,3,0,6,claude-opus-5,17,26,14,d239fe0297709605fa464b23e0836a799ac1fda3f3708f658f0860959b3aec22
+run-123,T06,opus5,task_first,task-first curator 2,1,3,completed,8,8,0,0,8,claude-opus-5,10,19,11,ff0496686abb01575124f3d68580a74ed7b9884652605c58df70614b17959821
+run-124,T06,opus5,task_first,task-first curator 1,1,4,completed,8,8,0,0,8,claude-opus-5,12,35,12,2cd411b85df7108e70ca7ae1b49363c7a7880d8178db80ec134adfa51499c77a
+run-125,T06,opus5,task_first,task-first curator 1,2,5,completed,8,7,1,0,7,claude-opus-5,13,31,4,8a9e39b91538648ee811334c86acfad9ebf7909a5a1af9b4daaf3dd97ed76e2a
+run-126,T06,opus5,world_first,world-first,2,6,completed,8,5,3,0,5,claude-opus-5,32,46,19,96dd3db7385e7e1ffe8d1a91dbfed50b0fc8300e69c3dd22aa8eae1f877f8663
+run-127,T06,opus5,world_first,world-first,2,7,completed,8,5,3,0,7,claude-opus-5,17,24,13,fd1100b73c9f1aa3c54220b21018c2a12ea9eb9a5503d91404d1658b75183c87
+run-128,T06,opus5,task_first,task-first curator 2,2,8,completed,8,8,0,0,8,claude-opus-5,9,22,16,2421759e1980479f41ba29b8a370b47a9af05a5d4e0ac554ae38058949e63ab0
+run-129,T06,grok,world_first,world-first,1,1,completed,8,3,5,0,3,grok-4.6,28,30,8,a75999d13ad5db58c9d607cc21fd2d7f9075d256a3f323db70da32462ed029f7
+run-130,T06,grok,task_first,task-first curator 1,1,2,completed,8,8,0,0,7,grok-4.6,17,46,10,5f630828e412c102bda31a106e217f06ae39d6827face48446d9d30d9df20cf3
+run-131,T06,grok,world_first,world-first,1,3,completed,8,5,3,0,5,grok-4.6,26,33,14,66ddb0463cbc334e68189c741ae21a5336601897beb332e6b00419ff8cc3a9cb
+run-132,T06,grok,task_first,task-first curator 2,1,4,completed,8,6,2,0,6,grok-4.6,15,40,10,4b89a157aa040c18374dcfbab18a203ef005fe1eb8f1d990db905a935b7d9b95
+run-133,T06,grok,task_first,task-first curator 1,2,5,completed,8,6,2,0,6,grok-4.6,10,23,11,88c2064d33c3e381edfbb047081dd5d01958db19767e7a84bb02f18bc8a10983
+run-134,T06,grok,task_first,task-first curator 2,2,6,completed,8,8,0,0,6,grok-4.6,15,30,5,67e7e089f90942f53aa4e6e2f69a7e59c5c82b293510cd7fa4d81c729b7750d1
+run-135,T06,grok,world_first,world-first,2,7,completed,8,3,5,0,4,grok-4.6,26,33,16,99b8d4115f5c1ca1e41b57d2a2cdcf792dfa2e41c0e8652c66543a874a63a0fb
+run-136,T06,grok,world_first,world-first,2,8,completed,8,5,3,0,4,grok-4.6,16,24,9,fce602391e64b55870c15c33586ef11c4792d10c2fc63efb4a0ae45482a83630
+run-137,T06,sol,task_first,task-first curator 2,1,1,completed,8,8,0,0,7,gpt-5.6-sol,13,30,5,cef04e5094147c09d29ef1765e56a9ddcf2a2d2132c824ddab90685e3900a4a1
+run-138,T06,sol,world_first,world-first,1,2,completed,8,4,3,1,5,gpt-5.6-sol,19,26,11,02ed95241e11327115a80ced3babfcab05f88d2561c38cddc1056d4ed14c66c7
+run-139,T06,sol,task_first,task-first curator 1,1,3,completed,8,6,2,0,7,gpt-5.6-sol,14,32,6,dd6fed9ea7c8184a4cc8e026a3e8aa318b990c284c5869e3c39e86db0f245ead
+run-140,T06,sol,world_first,world-first,1,4,completed,8,5,3,0,4,gpt-5.6-sol,28,35,9,7caaafaf52e0cbd4979f5507b236ec54cac3ead517e444ef2b6b1a9e38445dbd
+run-141,T06,sol,task_first,task-first curator 1,2,5,completed,8,7,0,1,5,gpt-5.6-sol,26,59,17,7dffb5a6d857b2c40f13ed46556c0dc36600c31b027a6cba47871d0ba1621a99
+run-142,T06,sol,task_first,task-first curator 2,2,6,completed,8,8,0,0,8,gpt-5.6-sol,10,22,13,8f7d03b7e3099478d3b642a325b14623cc0568417b84d2e7b831eea4e7137a85
+run-143,T06,sol,world_first,world-first,2,7,completed,8,5,3,0,5,gpt-5.6-sol,65,81,20,bc20af0b0b652053ea8ce3271e8f28e77c8aa38181b63eee724d771ab38d460e
+run-144,T06,sol,world_first,world-first,2,8,completed,8,3,4,1,3,gpt-5.6-sol,18,16,10,3f8c5c48d56f4aa6b6dc0fdd73b86eadeeb350f3255520d47226ac024bcbdac4
+run-145,T08,opus5,world_first,world-first,1,1,completed,5,5,0,0,4,claude-opus-5,11,22,12,cfda10835a5fce64f3b33ccadb2a311a8a331b97ab9909e3052bb4f2d232144d
+run-146,T08,opus5,world_first,world-first,1,2,completed,5,3,1,1,4,claude-opus-5,18,21,19,ca928b79041e7d31d8cf971ab32f4b10b558f088f3e53efb8fcfd5c724df847d
+run-147,T08,opus5,task_first,task-first curator 1,1,3,completed,5,5,0,0,4,claude-opus-5,12,14,11,bfb95a507f1c13c9ed6a641745ebfe064f88ce979de0298a4204fcd6d2fbe88c
+run-148,T08,opus5,task_first,task-first curator 2,1,4,completed,5,4,1,0,3,claude-opus-5,10,9,8,4c9e53fc843e44e7ab1d84244fadb4df6874024976de3f8c6ec91609d71adeee
+run-149,T08,opus5,world_first,world-first,2,5,completed,5,4,1,0,3,claude-opus-5,18,18,10,e804e344b9aedd3d71354283f2ef9f659cdeb2a7e8cce3f70604bab6c6fa7992
+run-150,T08,opus5,task_first,task-first curator 1,2,6,completed,5,4,1,0,4,claude-opus-5,8,12,11,d68551291e489781a706d44258484eaa07699ac9841ef5a34d05d2c66632fa94
+run-151,T08,opus5,world_first,world-first,2,7,completed,5,5,0,0,5,claude-opus-5,26,30,14,01c22ed0b62c4b715c49b857be1b003c52f03c183025ced7ac98fd3ef8369a3d
+run-152,T08,opus5,task_first,task-first curator 2,2,8,completed,5,3,2,0,4,claude-opus-5,16,16,11,f362f2c79689496cc072fcf5ab718ef31f35f42e9c45a55b3eacdaf7a78e12b9
+run-153,T08,grok,world_first,world-first,1,1,completed,5,4,1,0,3,grok-4.6,22,22,17,fe096ff3fd6c4398557326132bde6a9b728517929d7f9323432ea4fb2e2a13d7
+run-154,T08,grok,task_first,task-first curator 2,1,2,completed,5,5,0,0,5,grok-4.6,16,13,12,839161f7150d4ed81ff4ba6ec6711dd25521c5f6e0c823e44123c73cb87b5508
+run-155,T08,grok,task_first,task-first curator 1,1,3,completed,5,4,1,0,3,grok-4.6,18,16,15,326fc83ce732050636553b4ac7ca57294f00e82a54e24086e324a695833692c5
+run-156,T08,grok,world_first,world-first,1,4,completed,5,3,1,1,3,grok-4.6,21,21,11,a3cd7599505826de153437eeedbdc714127a206088efa59a117b5120af8e5ad6
+run-157,T08,grok,world_first,world-first,2,5,completed,5,5,0,0,4,grok-4.6,43,44,8,0be4cdc357daebc22adbe44ef11e8e477fc7028e1a8bdefd79d0534c18c63c74
+run-158,T08,grok,task_first,task-first curator 2,2,6,completed,5,4,1,0,4,grok-4.6,21,16,15,e7537149f02cc103b402c1617f0184b5dc74ca213e928d2bb69f2fcfd2de7355
+run-159,T08,grok,task_first,task-first curator 1,2,7,completed,5,4,1,0,5,grok-4.6,13,11,10,e444ef330f080f5c8a209c3d41a785a481397e17f763aad5b337c0dd837a3f4a
+run-160,T08,grok,world_first,world-first,2,8,completed,5,2,3,0,4,grok-4.6,26,29,8,191bf28ccb098ce1fd0ea3362300a310ab933be80adac7354ec2152aa2a79b84
+run-161,T08,sol,task_first,task-first curator 1,1,1,completed,5,4,0,1,2,gpt-5.6-sol,11,12,11,9e15eed9b9f9ee83a16dc32838c1f8e85f7f6698bdbb77735dc630ffb54f286c
+run-162,T08,sol,task_first,task-first curator 2,1,2,completed,5,5,0,0,5,gpt-5.6-sol,23,16,15,1eaa2ca9a97aef7702b3a759fab9c8ae6d2e63396ab2744221a302789ceb85c3
+run-163,T08,sol,world_first,world-first,1,3,completed,5,5,0,0,4,gpt-5.6-sol,19,40,10,9136b5a9b463d81c5bc81fad63523370ece093a09191ac8908e4525a9d5405b2
+run-164,T08,sol,world_first,world-first,1,4,completed,5,3,2,0,4,gpt-5.6-sol,53,42,8,a49b41e63b7eda28970f39496dec4bf2adc4fc742e16bca360ae31f743247cd1
+run-165,T08,sol,world_first,world-first,2,5,completed,5,3,2,0,3,gpt-5.6-sol,29,35,13,0a502090eba8153068fd40f7a9c939bb3905d4287fa31897dbfa7e538e181ae9
+run-166,T08,sol,task_first,task-first curator 2,2,6,completed,5,5,0,0,3,gpt-5.6-sol,32,30,17,3fd3720cdb61bbbcaa22b302dfd545814444a5d276e946aca27e6729bb185a86
+run-167,T08,sol,world_first,world-first,2,7,completed,5,3,2,0,1,gpt-5.6-sol,40,46,8,d11f6dc27b9ef49951235b58a0863512d6d1b3f2bc395e86d123cb25033a3b12
+run-168,T08,sol,task_first,task-first curator 1,2,8,completed,5,5,0,0,2,gpt-5.6-sol,14,11,10,b846243ff59256a0d247c49a2a522d9803caa0bc6fd34a617340562b17c0d3dd
+run-169,T07,opus5,task_first,task-first curator 2,1,1,completed,5,4,0,1,5,claude-opus-5,17,21,7,cb5cb63554e9451da9901835d08a4924e46961e1fedc503d8c61d366d52c370a
+run-170,T07,opus5,world_first,world-first,1,2,completed,5,3,1,1,4,claude-opus-5,27,32,14,7317112a05d946b75a7c4fe6b041fbf53f42aadd3a4843ad59389fe90db0b729
+run-171,T07,opus5,task_first,task-first curator 1,1,3,completed,5,5,0,0,5,claude-opus-5,12,14,9,fc08870f95a10598708cf4a599d563a188b40826432530c4348bd67888750e3d
+run-172,T07,opus5,world_first,world-first,1,4,completed,5,5,0,0,5,claude-opus-5,29,38,11,d2306b8b6c71fe4e98e6096eb23ab177abbe2c32a8a0674719dd7d00b780f6b5
+run-173,T07,opus5,task_first,task-first curator 2,2,5,completed,5,5,0,0,5,claude-opus-5,9,10,9,42e1bd72b5e84d72e858c084e2c3c0036d98ff3e51f003cfe192631f5fe7ae4f
+run-174,T07,opus5,world_first,world-first,2,6,completed,5,4,1,0,4,claude-opus-5,26,41,7,f32fc202dbcf2c2b2927ae6fdbf9245e69923c241d3930f9d6f814c0e0a24179
+run-175,T07,opus5,world_first,world-first,2,7,completed,5,4,1,0,4,claude-opus-5,16,23,12,8b7cfcf26ba1827cb43409add6d9bcf0c99fc1f3dcf4ae0ab59b7f5e50c48f3d
+run-176,T07,opus5,task_first,task-first curator 1,2,8,completed,5,5,0,0,5,claude-opus-5,26,21,7,8226255f794308271e5c220575093e02d6884eca466b27bd0cd733a5c0146836
+run-177,T07,grok,task_first,task-first curator 1,1,1,completed,5,4,1,0,3,grok-4.6,13,16,14,13df8ad639f12c87e84c005c767995db6a5a42c29b43f07e703cbb9e30112c06
+run-178,T07,grok,world_first,world-first,1,2,completed,5,2,3,0,3,grok-4.6,20,34,7,39c62bb3b14e10413e16764aa08682f19b23fec4e7930bf0cd869975766c2bde
+run-179,T07,grok,task_first,task-first curator 2,1,3,completed,5,5,0,0,4,grok-4.6,10,13,8,95ba784af5d27dcc46f8d3196e6d11f5650a19d911abb65575998c3ab99e9d88
+run-180,T07,grok,world_first,world-first,1,4,completed,5,5,0,0,4,grok-4.6,22,29,28,105569c7c1787a382084834be41ba6a902008c82703af7657a8e4911ef7b1de0
+run-181,T07,grok,world_first,world-first,2,5,completed,5,3,2,0,3,grok-4.6,16,21,12,34730645b8fd54bd630807e214a4a80b2efc2bfb5f5efb9e6a4d5c2212b95460
+run-182,T07,grok,world_first,world-first,2,6,completed,5,2,3,0,3,grok-4.6,26,30,10,a5a94e11a538b7b89cc9f2a64fe352db87a040f8253659964957a2300e07f1e4
+run-183,T07,grok,task_first,task-first curator 1,2,7,completed,5,5,0,0,4,grok-4.6,13,23,6,ef6f949aca164267c18d365f5bdab8a7719d75d4e60129e90af52ce40d5c190a
+run-184,T07,grok,task_first,task-first curator 2,2,8,completed,5,4,1,0,3,grok-4.6,19,18,8,438241e182b9a6cd24d00a81ad01347e8b73ce121781ed6a070f127b9d4d5c8f
+run-185,T07,sol,task_first,task-first curator 2,1,1,completed,5,5,0,0,4,gpt-5.6-sol,14,13,8,fc9e95e6bd73029cfa34e43360185fc78c71d426cce524f8fe46ed7f9c92a3e7
+run-186,T07,sol,task_first,task-first curator 1,1,2,completed,5,3,2,0,3,gpt-5.6-sol,18,21,6,893256f1b5d1bdf8e3d7c4f4c529ba1ff1533e53c724242db86a410b179db450
+run-187,T07,sol,world_first,world-first,1,3,completed,5,5,0,0,4,gpt-5.6-sol,30,36,11,cfee099ffda83fe5d326331af8630b01a6325cc0a3e15dc5f8d5d80e11b332be
+run-188,T07,sol,world_first,world-first,1,4,completed,5,3,2,0,3,gpt-5.6-sol,46,42,11,c0a0929cf3683310b2a36a2d28fce85a777ab927ce734eab8256b85931ed4e9e
+run-189,T07,sol,world_first,world-first,2,5,completed,5,4,1,0,5,gpt-5.6-sol,24,24,8,c6053bea674d28f7cbe704da393c6d9478ca0cb68b798fe80a86b275796d870e
+run-190,T07,sol,task_first,task-first curator 1,2,6,completed,5,5,0,0,4,gpt-5.6-sol,12,16,12,a01c4cd605e3526c282bc85ef4daf6f7e53366d943e36dcd02110834d07fc832
+run-191,T07,sol,world_first,world-first,2,7,completed,5,3,2,0,3,gpt-5.6-sol,8,15,8,b9880041cf1e5867d90953512e747445d3b80872d52cb65e31c103c70e4f385d
+run-192,T07,sol,task_first,task-first curator 2,2,8,completed,5,5,0,0,4,gpt-5.6-sol,18,21,4,17c7bf6066ee246453bdc31b15ab0560646b67da9f1cd7983d41c6ef1117b0bf

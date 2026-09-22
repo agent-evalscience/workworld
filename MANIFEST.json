@@ -1,0 +1,63 @@
+{
+  "artifact": "WorkWorlds public release artifact",
+  "paper_title": "WorkWorlds: An Infrastructure for Evaluating AI Agents on Workplace Tasks",
+  "artifact_date": "2026-09-22",
+  "study": {
+    "primary_world": "PharmaCo",
+    "task_clusters": 8,
+    "employee_seats": 6,
+    "runs": 192,
+    "criterion_executions": 1728,
+    "frozen_criteria": 72
+  },
+  "terminology": {
+    "world_first": "full projection",
+    "task_first": "task-curated subset"
+  },
+  "analysis": {
+    "task_cluster_bootstrap_draws": 2000,
+    "task_cluster_bootstrap_seed": 20270908
+  },
+  "candidate_models": [
+    "claude-opus-5",
+    "grok-4.6",
+    "gpt-5.6-sol"
+  ],
+  "semantic_grader": {
+    "model_version": "claude-opus-5",
+    "condition_blinded": true,
+    "packet_blinded": true,
+    "config_digest_location": "data/matched_results.json"
+  },
+  "reference_demo": {
+    "world_revision": "northstar-r1",
+    "unit_tests": 5,
+    "assertions": 12,
+    "seeded_isolation_adversaries": 6,
+    "production_code_included": false
+  },
+  "withheld": [
+    "production WorkWorlds implementation",
+    "production world builder and materialization/permission logic",
+    "production execution and tool-integration infrastructure",
+    "measured PharmaCo organizational corpus",
+    "restricted source materials",
+    "held-out verifier evidence",
+    "raw trajectories containing restricted organizational content"
+  ],
+  "release_version": "0.1.0",
+  "release_layout": {
+    "paper_source": "paper/",
+    "analysis": "analysis/",
+    "released_data": "data/",
+    "reference_demo": "reference/",
+    "release_checks": "scripts/verify_release.py"
+  },
+  "record_integrity": {
+    "algorithm": "sha256",
+    "canonicalization": "JSON sorted keys, compact separators, UTF-8, all CSV values are strings, exclude *_sha256 columns",
+    "run_column": "run_record_sha256",
+    "criterion_column": "criterion_record_sha256",
+    "scope": "Released record integrity only. These digests are not hashes of private execution traces or candidate artifacts."
+  }
+}

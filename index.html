@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WorkWorlds: An Infrastructure for Evaluating AI Agents on Workplace Tasks" />
+  <title>WorkWorlds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --purple: #6658e8;
+      --blue: #293dff;
+      --link-blue: #173a67;
+      --cyan: #8fd8de;
+      --ink: #090c27;
+      --body: #35384f;
+      --muted: #6d7088;
+      --line: #26355a36;
+      --line-soft: #15223a26;
+      --glass: #ffffff70;
+      --paper: #f7f8ff;
+      --max: 1320px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #f5f6fc; color: var(--ink); }
+    button, select { font: inherit; }
+    a { color: var(--link-blue); }
+
+    .page {
+      min-height: 100svh;
+      padding: clamp(26px, 2.6vw, 40px) clamp(28px, 3.6vw, 54px) 34px;
+      font-family: Manrope, ui-sans-serif, system-ui, sans-serif;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      background: linear-gradient(145deg, #f8f8fd 0%, #f4f5fb 52%, #f7fbfc 100%);
+    }
+
+    .page::before {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: .12;
+      background: repeating-radial-gradient(circle at 25% 35%, #3b3f7c 0 .45px, transparent .6px 3.8px);
+      background-size: 4px 4px;
+      mix-blend-mode: multiply;
+    }
+
+    .shell { width: min(var(--max), 100%); margin: 0 auto; }
+
+    .header {
+      width: min(1456px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(270px, 388px) minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      width: max-content;
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .initials { letter-spacing: .08em; font-size: clamp(2.45rem, 3.1vw, 3.1rem); font-weight: 400; line-height: .82; }
+    .lockup { letter-spacing: .16em; text-transform: uppercase; font-size: clamp(.49rem, .58vw, .6rem); font-weight: 600; line-height: 1.42; }
+    .lockup span { color: var(--purple); }
+
+    .header nav { display: flex; justify-content: flex-end; gap: clamp(18px, 2.25vw, 36px); }
+    .header nav a,
+    .header-action {
+      color: var(--link-blue);
+      font-size: clamp(.79rem, .84vw, .89rem);
+      font-weight: 400;
+      text-decoration: none;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .header nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 100%;
+      height: 1px;
+      background: var(--purple);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .25s ease;
+    }
+    .header nav a:hover::after { transform: scaleX(1); transform-origin: left; }
+
+    .header-action {
+      min-width: 106px;
+      padding: 7px 0 9px;
+      border-bottom: 1px solid var(--ink);
+      display: inline-flex;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .header-action b { font-weight: 400; transition: transform .22s ease; }
+    .header-action:hover b { transform: translateX(5px); }
+
+    .hero {
+      max-width: 990px;
+      padding: clamp(60px, 8vh, 88px) 0 clamp(44px, 6vh, 66px);
+    }
+    .eyebrow,
+    .section-title {
+      color: var(--purple);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin: 0 0 18px;
+      font-size: .64rem;
+      font-weight: 750;
+    }
+    .hero h1 {
+      color: var(--ink);
+      letter-spacing: -.035em;
+      max-width: 940px;
+      margin: 0;
+      font-size: clamp(2.15rem, 4.05vw, 3.55rem);
+      font-weight: 400;
+      line-height: .98;
+    }
+    .hero .dek {
+      color: var(--body);
+      max-width: 900px;
+      margin: 28px 0 0;
+      font-size: clamp(.92rem, 1.15vw, 1.05rem);
+      line-height: 1.78;
+    }
+    .hero-byline { color: #090c27a6; margin: 18px 0 0; font-size: clamp(.72rem, .88vw, .86rem); line-height: 1.6; }
+    .hero-links { margin-top: 20px; }
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px 18px;
+      margin-top: 32px;
+      color: #090c27b0;
+      font-size: clamp(.82rem, .95vw, .95rem);
+      font-weight: 520;
+      line-height: 1.45;
+    }
+    .hero-meta span { display: block; }
+
+    .section { margin-top: clamp(72px, 9vh, 104px); }
+    .section-heading {
+      color: var(--blue);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin: 0 0 30px;
+      font-size: .78rem;
+      font-weight: 650;
+      line-height: 1.2;
+    }
+    .section-heading::before { content: ""; width: 3px; height: 15px; border-radius: 999px; background: var(--blue); flex: none; }
+
+    .project-row {
+      display: grid;
+      grid-template-columns: minmax(360px, .88fr) minmax(0, 1.12fr);
+      gap: clamp(34px, 4vw, 62px);
+      align-items: start;
+    }
+    .project-row + .project-row { margin-top: clamp(58px, 7vh, 84px); }
+
+    .figure-panel {
+      color: var(--ink);
+      background: var(--glass);
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      min-width: 0;
+      margin: 0;
+      overflow: visible;
+      box-shadow: inset 0 1px #ffffffbd;
+      backdrop-filter: blur(13px);
+      -webkit-backdrop-filter: blur(13px);
+      position: relative;
+      z-index: 1;
+    }
+    .figure-panel img {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #fff;
+      border-radius: 8px 8px 0 0;
+      cursor: zoom-in;
+      transition: transform .24s cubic-bezier(.22,.61,.36,1), box-shadow .24s ease, filter .24s ease;
+      will-change: transform, box-shadow;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .figure-panel:hover { z-index: 50; }
+      .figure-panel img:hover {
+        transform: scale(1.01);
+        box-shadow: 0 12px 28px #090c2720;
+        filter: saturate(1.02);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .figure-panel img { transition: none; }
+    }
+    .figure-hover-preview {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      pointer-events: none;
+      opacity: 0;
+      z-index: 999;
+      transition: opacity .24s ease;
+    }
+    .figure-hover-preview.active { opacity: 1; }
+    .figure-hover-shell {
+      background: #ffffff;
+      border: 1px solid #cfd5ea;
+      border-radius: 14px;
+      padding: 12px;
+      box-shadow: 0 24px 70px #090c2745, 0 0 0 1px #ffffff inset;
+      transform: translateY(12px) scale(.965);
+      transition: transform .28s cubic-bezier(.22,.61,.36,1), box-shadow .28s ease;
+      max-width: min(72vw, 1120px);
+      max-height: 78vh;
+    }
+    .figure-hover-preview.active .figure-hover-shell {
+      transform: translateY(0) scale(1);
+    }
+    .figure-hover-shell img {
+      display: block;
+      width: auto;
+      max-width: min(72vw, 1120px);
+      max-height: calc(78vh - 24px);
+      height: auto;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .results-table-wrap {
+      margin-top: 28px;
+      border: 1px solid #26355a31;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #ffffffde;
+      box-shadow: inset 0 1px #ffffffbd;
+    }
+    .results-table-wrap table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .64rem;
+      line-height: 1.55;
+    }
+    .results-table-wrap thead th {
+      background: #f6f7fc;
+      color: var(--blue);
+      text-align: left;
+      font-weight: 700;
+      letter-spacing: .03em;
+    }
+    .results-table-wrap th,
+    .results-table-wrap td {
+      padding: 12px 14px;
+      border-bottom: 1px solid #26355a1f;
+      vertical-align: top;
+    }
+    .results-table-wrap tbody tr:last-child td { border-bottom: 0; }
+    .results-table-wrap td.num {
+      text-align: right;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+    .results-table-wrap caption {
+      caption-side: top;
+      text-align: left;
+      padding: 12px 14px 0;
+      color: #090c27ba;
+      font-size: .58rem;
+      line-height: 1.55;
+    }
+    .results-table-wrap tbody tr[data-metric-key] {
+      cursor: pointer;
+      transition: background .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+    .results-table-wrap tbody tr[data-metric-key]:hover {
+      background: #f7f9ff;
+      box-shadow: inset 3px 0 0 var(--blue);
+    }
+    .results-table-wrap tbody tr[data-metric-key].active {
+      background: #edf3ff;
+      box-shadow: inset 4px 0 0 var(--blue);
+    }
+    .results-table-wrap tbody tr.context-row {
+      color: #090c27a8;
+    }
+    .figure-panel figcaption {
+      position: relative;
+      z-index: 4;
+      background: #ffffffee;
+      border-top: 1px solid #26355a31;
+      margin: 0;
+      padding: 10px 14px;
+      text-align: center;
+      color: #090c27ba;
+      font-size: .64rem;
+      line-height: 1.45;
+    }
+
+    .figure-tabs { position: relative; z-index: 4; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-bottom: 1px solid #26355a31; background: #ffffffee; }
+    .figure-tabs button {
+      appearance: none;
+      border: 0;
+      border-right: 1px solid #26355a25;
+      background: transparent;
+      color: #090c278f;
+      padding: 12px 10px;
+      cursor: pointer;
+      font-size: .59rem;
+      font-weight: 600;
+      text-align: center;
+      transition: background .22s ease, color .22s ease, box-shadow .22s ease;
+    }
+    .figure-tabs button:last-child { border-right: 0; }
+    .figure-tabs button:hover { background: #ffffff9e; color: var(--blue); }
+    .figure-tabs button.active { color: var(--blue); background: #ffffffb8; box-shadow: inset 0 -2px 0 var(--blue); }
+
+    .copy { min-width: 0; padding: 10px 2px 4px; }
+    .meta {
+      color: var(--blue);
+      letter-spacing: .095em;
+      text-transform: uppercase;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 20px;
+      font-size: .59rem;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .meta time { color: var(--ink); letter-spacing: 0; font-weight: 500; }
+    .title-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 22px; align-items: start; margin-top: 19px; }
+    .title-row h2 { letter-spacing: -.035em; margin: 0; font-size: clamp(1.55rem, 2.45vw, 2.25rem); font-weight: 450; line-height: 1.13; }
+    .status { color: var(--blue); border: 1px solid #695eff; border-radius: 7px; padding: 7px 10px; letter-spacing: .04em; text-transform: uppercase; font-size: .61rem; font-weight: 650; }
+    .copy > p { color: #090c27cf; max-width: 700px; margin: 23px 0 0; font-size: .76rem; line-height: 1.76; }
+
+    .findings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 29px; }
+    .findings > div { border-left: 1px solid #15223a33; min-width: 0; padding: 0 18px; }
+    .findings > div:first-child { border-left: 0; padding-left: 0; }
+    .findings strong, .findings span { display: block; }
+    .findings strong { color: var(--blue); letter-spacing: -.03em; font-size: clamp(1.05rem, 1.8vw, 1.5rem); font-weight: 450; }
+    .findings span { color: #090c27c4; margin-top: 7px; font-size: .58rem; line-height: 1.6; }
+
+    .links { display: flex; flex-wrap: wrap; gap: 16px 38px; margin-top: 36px; }
+    .links a { color: var(--link-blue); display: inline-flex; align-items: center; gap: 8px; width: max-content; max-width: 100%; font-size: .69rem; font-weight: 550; text-decoration: none; }
+    .links a span { font-size: .88rem; font-weight: 400; transition: transform .2s ease; }
+    .links a:hover span { transform: translate(3px, -2px); }
+
+    .experiment-figure { padding: 18px; }
+    .experiment-figure img { border: 1px solid #26355a20; border-radius: 5px; }
+
+    .metric-switch { display: flex; gap: 4px; margin-top: 28px; border-bottom: 1px solid #090c2726; }
+    .metric-switch button { border: 0; border-bottom: 2px solid transparent; background: transparent; color: #090c27ad; margin-bottom: -1px; padding: 11px 12px 12px; cursor: pointer; font-size: .62rem; font-weight: 500; }
+    .metric-switch button:first-child { padding-left: 0; }
+    .metric-switch button:hover { color: var(--purple); }
+    .metric-switch button.active { color: var(--ink); border-bottom-color: var(--purple); font-weight: 650; }
+
+    .metric-detail { margin-top: 24px; }
+    .metric-line { display: grid; grid-template-columns: 128px minmax(0, 1fr) 66px; gap: 12px; align-items: center; margin-top: 13px; font-size: .62rem; }
+    .metric-track { height: 7px; background: #ffffffbd; border: 1px solid #26355a26; overflow: hidden; }
+    .metric-fill { height: 100%; transition: width .35s ease; }
+    .metric-fill.full { background: #8fd8de; }
+    .metric-fill.curated { background: var(--purple); }
+    .metric-value { text-align: right; font-weight: 650; font-variant-numeric: tabular-nums; }
+    .metric-note { color: #090c278f; margin-top: 16px; font-size: .59rem; line-height: 1.6; }
+    .result-reading { margin: 18px 0 0; padding: 12px 14px; border-left: 2px solid var(--blue); background: #edf3fb80; color: #090c27b8; font-size: .64rem; line-height: 1.65; }
+    .result-reading strong { color: #090c27e8; font-weight: 600; }
+
+    .materials-block {
+      display: grid;
+      grid-template-columns: minmax(180px, .42fr) minmax(0, 1.58fr);
+      gap: clamp(32px, 5vw, 70px);
+      border-top: 1px solid #6658e85c;
+      padding-top: 34px;
+    }
+    .materials-block > p {
+      color: var(--purple);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: .59rem;
+      font-weight: 750;
+    }
+    .materials-copy h3 {
+      margin: 0;
+      letter-spacing: -.025em;
+      font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+      font-weight: 500;
+      line-height: 1.18;
+    }
+    .materials-copy > p {
+      color: #090c27b8;
+      max-width: 820px;
+      margin: 13px 0 0;
+      font-size: .72rem;
+      line-height: 1.72;
+    }
+    .materials-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px 30px;
+      margin-top: 22px;
+    }
+    .materials-links a {
+      color: var(--link-blue);
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: .64rem;
+      font-weight: 550;
+      text-decoration: none;
+    }
+    .materials-links a span { transition: transform .2s ease; }
+    .materials-links a:hover span { transform: translate(3px, -2px); }
+    .contact-block { margin-top: 42px; }
+
+    .verify-box {
+      margin-top: clamp(48px, 6vh, 68px);
+      display: grid;
+      grid-template-columns: minmax(180px, .42fr) minmax(0, 1.58fr);
+      gap: clamp(32px, 5vw, 70px);
+      border-top: 1px solid #6658e85c;
+      padding-top: 34px;
+    }
+    .verify-box > p { color: var(--purple); letter-spacing: .14em; text-transform: uppercase; margin: 0; font-size: .59rem; font-weight: 750; }
+    .verify-copy h3 { margin: 0; letter-spacing: -.02em; font-size: clamp(1.4rem, 2.4vw, 2rem); font-weight: 500; }
+    .verify-copy > p { color: #090c2792; margin: 10px 0 0; max-width: 760px; font-size: .72rem; line-height: 1.65; }
+    pre { margin: 23px 0 0; padding: 18px 20px; overflow-x: auto; border: 1px solid #18213f24; background: #ffffff73; color: #11152e; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .66rem; line-height: 1.65; }
+    .copy-command { margin-top: 10px; border: 0; background: transparent; padding: 0; color: var(--blue); cursor: pointer; font-size: .61rem; font-weight: 550; }
+
+    footer { margin-top: clamp(80px, 10vh, 120px); padding-top: 22px; border-top: 1px solid #18213f24; display: flex; justify-content: space-between; gap: 30px; color: #090c2785; font-size: .6rem; line-height: 1.6; }
+    footer a { color: var(--link-blue); text-decoration: none; }
+
+    @media (max-width: 980px) {
+      .header { grid-template-columns: 1fr auto; }
+      .header nav { display: none; }
+      .project-row { grid-template-columns: 1fr; }
+      .figure-panel { max-width: 760px; }
+      .materials-block, .verify-box { grid-template-columns: 1fr; gap: 16px; }
+    }
+
+    @media (max-width: 680px) {
+      .page { padding: 22px 20px 28px; }
+      .header { grid-template-columns: 1fr; gap: 12px; }
+      .header-action { display: none; }
+      .lockup { font-size: .48rem; }
+      .hero { padding-top: 54px; }
+      .hero h1 { font-size: clamp(1.95rem, 9.4vw, 2.6rem); }
+      .findings { grid-template-columns: 1fr; gap: 16px; }
+      .findings > div { border-left: 0; border-top: 1px solid #15223a33; padding: 16px 0 0; }
+      .findings > div:first-child { border-top: 0; padding-top: 0; }
+      .title-row { grid-template-columns: 1fr; gap: 12px; }
+      .status { width: max-content; }
+      .figure-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .figure-tabs button { font-size: .56rem; padding: 10px 6px; }
+      .hero-meta { grid-template-columns: 1fr; gap: 8px; }
+      .metric-line { grid-template-columns: 1fr; gap: 6px; }
+      .metric-value { text-align: left; }
+      .results-table-wrap { overflow-x: auto; }
+      .results-table-wrap table { min-width: 560px; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" id="page">
+    <header class="header">
+      <a class="logo" href="#top" aria-label="WorkWorlds home">
+        <span class="lockup" aria-hidden="true"><span>Work</span><br>Worlds<br>Release</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#experiment">Experiment</a>
+        <a href="#release">Artifacts</a>
+        <a href="#citation">Paper</a>
+        <a href="#reproduce">Reproduce</a>
+      </nav>
+      <a class="header-action" href="README.md">README <b aria-hidden="true">→</b></a>
+    </header>
+
+    <div class="shell">
+      <section class="hero" id="top" aria-labelledby="title">
+        <p class="eyebrow">Research release · arXiv:2609.23806 · ICLR 2027 submission</p>
+        <h1 id="title">WorkWorlds: An Infrastructure for Evaluating AI Agents on Workplace Tasks</h1>
+        <p class="hero-byline">Yining Hua · Harvard University · Agent Evaluation Science Inc. &nbsp;&nbsp; Levi Lian · Raycaster · Stanford University</p>
+        <p class="dek">WorkWorlds fixes the organization before the task. A world first fixes a revision, date, and employee seat and materializes the role-visible workplace. The task is introduced only after that projection is fixed, allowing workplace structure and information exposure to be varied without rebuilding the organization around each assignment.</p>
+        <nav class="links hero-links" aria-label="Paper links">
+          <a href="https://arxiv.org/abs/2609.23806">arXiv <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/ningkko/eval-worlds-results-paper">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="#citation">Citation <span aria-hidden="true">↓</span></a>
+        </nav>
+        <div class="hero-meta" aria-label="Study summary">
+          <span>8 measured tasks</span><span>6 employee seats</span><span>72 scored criteria</span><span>192 matched evaluations</span><span>1,728 criterion executions</span>
+        </div>
+      </section>
+
+      <section class="section" id="overview">
+        <h2 class="section-heading">WorkWorlds</h2>
+        <article class="project-row">
+          <figure class="figure-panel">
+            <img src="paper/figures/figure1.png" alt="WorkWorlds overview" />
+            <figcaption>Persistent organizational world → role-visible employee projection → task overlay → execution and grading.</figcaption>
+          </figure>
+          <div class="copy">
+            <div class="meta"><span>Infrastructure · Workplace agents · Evaluation</span><time>2026</time></div>
+            <div class="title-row">
+              <h2>Build the workplace before the benchmark task</h2>
+              <span class="status">Release</span>
+            </div>
+            <p>The measured study uses PharmaCo, a fictional sterile-injectable pharmaceutical company. Employees, roles, permissions, products, records, systems, and prior events persist across assignments. The same organization can then be materialized for different employee seats and points in company history.</p>
+            <div class="findings" aria-label="Construction summary">
+              <div><strong>1 world</strong><span>Frozen PharmaCo revision used for the measured eight-task panel.</span></div>
+              <div><strong>6 seats</strong><span>Employee-specific projections determine what each agent can see.</span></div>
+              <div><strong>3 rebuilds</strong><span>Clean construction rebuilds were identical under the frozen inputs.</span></div>
+            </div>
+            <nav class="links" aria-label="Overview links">
+              <a href="paper/main.tex">Paper source <span aria-hidden="true">↗</span></a>
+              <a href="ARTIFACT_SCOPE.md">Artifact scope <span aria-hidden="true">↗</span></a>
+              <a href="reference/README.md">Reference implementation <span aria-hidden="true">↗</span></a>
+            </nav>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="experiment">
+        <h2 class="section-heading">Matched information experiment</h2>
+        <article class="project-row">
+          <figure class="figure-panel experiment-figure">
+            <div class="figure-tabs" role="tablist" aria-label="Manuscript figures">
+              <button type="button" class="active" data-figure="0">Design</button>
+              <button type="button" data-figure="1">Results</button>
+              <button type="button" data-figure="2">Breakdown</button>
+                          </div>
+            <img id="figureImage" src="paper/figures/figure2.png" alt="Experimental design" />
+            <figcaption id="figureCaption">Construction validation tests reproducibility; the matched experiment varies only the information projection while holding the world, task, seat, agent, and grader fixed.</figcaption>
+          </figure>
+          <div class="copy">
+            <div class="meta"><span>Matched study · Information environment · GEE</span><time>2026</time></div>
+            <div class="title-row">
+              <h2>Task curation changes what the evaluation measures</h2>
+              <span class="status">192 runs</span>
+            </div>
+            <p>Each evaluation is matched on world, task, employee seat, agent configuration, source bytes, and grader. The comparison changes only the information projection: the complete role-visible workplace versus a task-curated subset selected from the same projection.</p>
+
+            <!-- BEGIN AUTO-GENERATED RESULTS SUMMARY -->
+            <div class="findings" aria-label="Main findings">
+              <div><strong>90.4 → 72.8%</strong><span>Sufficient-evidence access, task-curated subset → full projection.</span></div>
+              <div><strong>76.7 → 68.0%</strong><span>Criterion pass, task-curated subset → full projection.</span></div>
+              <div><strong>82.7 vs 84.2%</strong><span>Pass given observed evidence access was similar across conditions.</span></div>
+            </div>
+            <p class="result-reading"><strong>How to read this:</strong> arrows run from the task-curated subset to the full role-visible workplace. The higher values under curation do not indicate a better agent; they show that pre-selecting task-relevant information removes part of the information-localization work and raises measured performance. When that curation is removed, evidence access falls by 17.6 percentage points and criterion pass falls by 8.7 points. Conditional pass is similar once sufficient evidence is reached, so the measured separation is concentrated in whether the agent reaches that evidence. The three tabs below correspond directly to the three interactive rows in the table; selecting either updates the same outcome view.</p>
+
+            <div class="metric-switch" role="tablist" aria-label="Outcome explorer">
+              <button type="button" class="active" data-metric="access">Access</button>
+              <button type="button" data-metric="pass">Criterion pass</button>
+              <button type="button" data-metric="inspect">Search burden</button>
+            </div>
+            <div class="metric-detail" id="metricDetail" aria-live="polite"></div>
+
+            <div class="results-table-wrap" aria-label="Key experiment table">
+              <table>
+                <caption>Key matched-information outcomes. Read left to right as task-curated subset → full projection.</caption>
+                <thead>
+                  <tr>
+                    <th>Outcome</th>
+                    <th style="text-align:right;">Task-curated</th>
+                    <th style="text-align:right;">Full projection</th>
+                    <th style="text-align:right;">Change to full</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-metric-key="access"><td>Sufficient-evidence access</td><td class="num">90.4%</td><td class="num">72.8%</td><td class="num">-17.6 pp</td></tr>
+                  <tr data-metric-key="pass"><td>Criterion pass</td><td class="num">76.7%</td><td class="num">68.0%</td><td class="num">-8.7 pp</td></tr>
+                  <tr class="context-row"><td>Pass given observed access</td><td class="num">82.7%</td><td class="num">84.2%</td><td class="num">+1.5 pp</td></tr>
+                  <tr data-metric-key="inspect"><td>Mean file / record inspections</td><td class="num">15.2</td><td class="num">28.6</td><td class="num">+13.4</td></tr>
+                </tbody>
+              </table>
+            <!-- END AUTO-GENERATED RESULTS SUMMARY -->
+            </div>
+
+            <nav class="links" aria-label="Experiment links">
+              <a href="data/analysis_results.json">Analysis results <span aria-hidden="true">↗</span></a>
+              <a href="data/criterion_results.csv">Criterion ledger <span aria-hidden="true">↗</span></a>
+              <a href="analysis/analyze_results.py">Analysis code <span aria-hidden="true">↗</span></a>
+            </nav>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="release">
+        <h2 class="section-heading">Reproducibility &amp; materials</h2>
+        <div class="materials-block">
+          <p>Public release</p>
+          <div class="materials-copy">
+            <h3>One release connects the reported results to the underlying ledgers and analysis.</h3>
+            <p>The frozen release contains the 192 completed runs and 1,728 criterion executions used in the paper, the statistical pipeline that recomputes the reported GEE-standardized probabilities and task-cluster bootstrap intervals, and a fictional public-safe implementation of the WorkWorlds construction contract. The measured PharmaCo organizational corpus, restricted source materials, held-out verifier evidence, and raw organizational trajectories are outside the public release.</p>
+            <nav class="materials-links" aria-label="Reproducibility materials">
+              <a href="data/criterion_results.csv">Criterion ledger <span aria-hidden="true">↗</span></a>
+              <a href="data/run_ledger.csv">Run ledger <span aria-hidden="true">↗</span></a>
+              <a href="analysis/analyze_results.py">Analysis code <span aria-hidden="true">↗</span></a>
+              <a href="reference/eval_worlds_toy/core.py">Reference implementation <span aria-hidden="true">↗</span></a>
+              <a href="ARTIFACT_SCOPE.md">Release boundary <span aria-hidden="true">↗</span></a>
+              <a href="paper/main.tex">Paper source <span aria-hidden="true">↗</span></a>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="citation">
+        <h2 class="section-heading">Paper &amp; citation</h2>
+        <div class="materials-block">
+          <p>Preprint</p>
+          <div class="materials-copy">
+            <h3>WorkWorlds: An Infrastructure for Evaluating AI Agents on Workplace Tasks</h3>
+            <p>Yining Hua (Harvard University; Agent Evaluation Science Inc.) and Levi Lian (Raycaster; Stanford University). The stable arXiv link resolves to the latest version of the paper.</p>
+            <nav class="materials-links" aria-label="Paper and repository links">
+              <a href="https://arxiv.org/abs/2609.23806">arXiv:2609.23806 <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/ningkko/eval-worlds-results-paper">GitHub repository <span aria-hidden="true">↗</span></a>
+              <a href="CITATION.cff">Citation metadata <span aria-hidden="true">↗</span></a>
+            </nav>
+            <pre>@misc{hua2026workworlds,
+  title        = {WorkWorlds: An Infrastructure for Evaluating AI Agents on Workplace Tasks},
+  author       = {Yining Hua and Levi Lian},
+  year         = {2026},
+  eprint       = {2609.23806},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.AI},
+  url          = {https://arxiv.org/abs/2609.23806}
+}</pre>
+          </div>
+        </div>
+        <div class="materials-block contact-block">
+          <p>Deploy</p>
+          <div class="materials-copy">
+            <h3>Bring WorkWorlds to an industry setting.</h3>
+            <p>Interested in deploying an industry-scale evaluation environment inside your organization? Contact us to discuss adapting the infrastructure to your workflows, permissions, internal systems, and evaluation needs.</p>
+            <nav class="materials-links" aria-label="Contact links">
+              <a href="mailto:yininghua@g.harvard.edu?subject=WorkWorlds%20deployment">Contact us <span aria-hidden="true">↗</span></a>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <section class="verify-box" id="reproduce">
+        <p>Reproduce</p>
+        <div class="verify-copy">
+          <h3>One command checks the release and recomputes the analysis.</h3>
+          <p>Python 3.10+ is recommended. The verification target checks ledger counts, reference tests, seeded isolation adversaries, and the released statistical analysis.</p>
+          <pre id="verifyCommand">python3 -m venv .venv
+source .venv/bin/activate
+pip install -r analysis/requirements.txt
+make verify</pre>
+          <button type="button" class="copy-command" id="copyCommand">Copy command</button>
+        </div>
+      </section>
+
+      <footer>
+        <span>Yining Hua · Levi Lian · WorkWorlds public release · CC BY 4.0</span>
+        <span><a href="https://arxiv.org/abs/2609.23806">arXiv</a> · <a href="https://github.com/ningkko/eval-worlds-results-paper">GitHub</a> · <a href="CITATION.cff">Citation</a> · <a href="README.md">README</a> · <a href="VALIDATION.txt">Validation record</a></span>
+      </footer>
+    </div>
+  </main>
+
+  <div class="figure-hover-preview" id="figureHoverPreview" aria-hidden="true">
+    <div class="figure-hover-shell">
+      <img id="figureHoverImage" alt="Figure preview" />
+    </div>
+  </div>
+
+  <script>
+
+    const figures = [
+      ['paper/figures/figure2.png', 'Experimental design', 'Construction validation tests reproducibility; the matched experiment varies only the information projection while holding the world, task, seat, agent, and grader fixed.'],
+      ['paper/figures/figure3.png', 'Matched experiment results', 'Effect of moving from the task-curated subset to the full role-visible projection on criterion pass, sufficient-evidence access, and search burden, with joint access/pass states shown for both conditions.'],
+      ['paper/figures/figure4.png', 'Task and agent breakdown with sensitivity analyses', 'Task-level and agent-level results, plus curator and leave-one-task-out sensitivity analyses.'],
+    ];
+    document.querySelectorAll('[data-figure]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const idx = Number(button.dataset.figure);
+        document.querySelectorAll('[data-figure]').forEach(b => b.classList.toggle('active', b === button));
+        document.getElementById('figureImage').src = figures[idx][0];
+        document.getElementById('figureImage').alt = figures[idx][1];
+        document.getElementById('figureCaption').textContent = figures[idx][2];
+      });
+    });
+
+    // BEGIN AUTO-GENERATED METRICS
+    const metrics = {
+  "access": {
+    "label": "Sufficient-evidence access",
+    "full": 72.8,
+    "curated": 90.4,
+    "max": 100,
+    "unit": "%",
+    "note": "Removing task-level curation lowers evidence access by 17.6 percentage points; 95% task-cluster bootstrap interval for the decrease, 10.3 to 24.3 points."
+  },
+  "pass": {
+    "label": "Criterion pass",
+    "full": 68.0,
+    "curated": 76.7,
+    "max": 100,
+    "unit": "%",
+    "note": "Removing task-level curation lowers criterion pass by 8.7 percentage points; 95% task-cluster bootstrap interval for the decrease, 1.0 to 15.6 points."
+  },
+  "inspect": {
+    "label": "Mean file / record inspections",
+    "full": 28.6,
+    "curated": 15.2,
+    "max": 30,
+    "unit": "",
+    "note": "Removing task-level curation increased file or record inspections by 13.4 per run on average."
+  }
+};
+    // END AUTO-GENERATED METRICS
+    function renderMetric(key) {
+      const m = metrics[key];
+      const f = (m.full / m.max) * 100;
+      const c = (m.curated / m.max) * 100;
+      document.getElementById('metricDetail').innerHTML = `
+        <div class="metric-line"><span>Task-curated</span><div class="metric-track"><div class="metric-fill curated" style="width:${c}%"></div></div><span class="metric-value">${m.curated.toFixed(1)}${m.unit}</span></div>
+        <div class="metric-line"><span>Full projection</span><div class="metric-track"><div class="metric-fill full" style="width:${f}%"></div></div><span class="metric-value">${m.full.toFixed(1)}${m.unit}</span></div>
+        <p class="metric-note">${m.note}</p>`;
+    }
+    const metricButtons = Array.from(document.querySelectorAll('[data-metric]'));
+    const metricRows = Array.from(document.querySelectorAll('.results-table-wrap tbody tr[data-metric-key]'));
+
+    function setMetricSelection(key) {
+      metricButtons.forEach((button) => {
+        const active = button.dataset.metric === key;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      metricRows.forEach((row) => {
+        const active = row.dataset.metricKey === key;
+        row.classList.toggle('active', active);
+        row.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      renderMetric(key);
+    }
+
+    metricButtons.forEach((button) => {
+      button.addEventListener('click', () => setMetricSelection(button.dataset.metric));
+    });
+    const hoverPreview = document.getElementById('figureHoverPreview');
+    const hoverPreviewImage = document.getElementById('figureHoverImage');
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+    let hoverHideTimer;
+
+    function showFigurePreview(img) {
+      if (!finePointer.matches) return;
+      clearTimeout(hoverHideTimer);
+      hoverPreviewImage.src = img.currentSrc || img.src;
+      hoverPreviewImage.alt = img.alt || 'Figure preview';
+      hoverPreview.classList.add('active');
+      hoverPreview.setAttribute('aria-hidden', 'false');
+    }
+    function hideFigurePreview() {
+      clearTimeout(hoverHideTimer);
+      hoverHideTimer = setTimeout(() => {
+        hoverPreview.classList.remove('active');
+        hoverPreview.setAttribute('aria-hidden', 'true');
+      }, 35);
+    }
+
+    document.querySelectorAll('.figure-panel img').forEach((img) => {
+      img.addEventListener('mouseenter', () => showFigurePreview(img));
+      img.addEventListener('mouseleave', hideFigurePreview);
+      img.addEventListener('click', (event) => {
+        event.preventDefault();
+      });
+    });
+
+    metricRows.forEach((row) => {
+      row.addEventListener('click', () => setMetricSelection(row.dataset.metricKey));
+    });
+
+    setMetricSelection('access');
+
+    document.getElementById('copyCommand').addEventListener('click', async () => {
+      const btn = document.getElementById('copyCommand');
+      try {
+        await navigator.clipboard.writeText(document.getElementById('verifyCommand').textContent);
+        btn.textContent = 'Copied';
+        setTimeout(() => btn.textContent = 'Copy command', 1200);
+      } catch {
+        btn.textContent = 'Select command manually';
+      }
+    });
+  </script>
+</body>
+</html>

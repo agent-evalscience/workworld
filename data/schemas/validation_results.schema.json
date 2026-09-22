@@ -1,0 +1,345 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "eval-worlds-validation-results/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "world_rebuilds",
+    "seat_materializations",
+    "task_independence",
+    "access_audit",
+    "evidence_map",
+    "seeded_failures"
+  ],
+  "properties": {
+    "schema": {
+      "const": "eval-worlds-validation-results/v1"
+    },
+    "world_rebuilds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempted",
+        "identical",
+        "manifest_mismatches",
+        "fingerprints"
+      ],
+      "properties": {
+        "attempted": {
+          "const": 3
+        },
+        "identical": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "manifest_mismatches": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fingerprints": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "seat_materializations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempted",
+        "identical",
+        "fingerprints"
+      ],
+      "properties": {
+        "attempted": {
+          "const": 18
+        },
+        "identical": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18
+        },
+        "fingerprints": {
+          "type": "object",
+          "minProperties": 6,
+          "maxProperties": 6,
+          "propertyNames": {
+            "enum": [
+              "EMP-RA-001",
+              "EMP-MSAT-002",
+              "EMP-MSAT-003",
+              "EMP-QA-001",
+              "EMP-SQ-002",
+              "EMP-QC-001"
+            ]
+          },
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "workspace_sha256",
+              "tool_bundle_sha256"
+            ],
+            "properties": {
+              "workspace_sha256": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              },
+              "tool_bundle_sha256": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "task_independence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pairs_tested",
+        "pairs_identical",
+        "staged_tasks_tested",
+        "staged_tasks_identical"
+      ],
+      "properties": {
+        "pairs_tested": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pairs_identical": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "staged_tasks_tested": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "staged_tasks_identical": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "access_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "expected_authorized",
+        "retained_authorized",
+        "unauthorized_exposures",
+        "verifier_overlaps_unreviewed"
+      ],
+      "properties": {
+        "expected_authorized": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "retained_authorized": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unauthorized_exposures": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "verifier_overlaps_unreviewed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reviewed_hash_exceptions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "sha256",
+              "rationale"
+            ],
+            "properties": {
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "evidence_map": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "criteria",
+        "criteria_solvable",
+        "reviewer_1_solvable",
+        "reviewer_2_solvable",
+        "solvability_exact_agreement",
+        "solvability_kappa",
+        "solvability_gwet_ac1",
+        "solvability_contingency",
+        "solvability_kappa_bootstrap_ci",
+        "bootstrap_replicates",
+        "locator_jaccard_mean",
+        "locator_jaccard_median",
+        "adjudicated_criteria"
+      ],
+      "properties": {
+        "criteria": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "criteria_solvable": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reviewer_1_solvable": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reviewer_2_solvable": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "solvability_exact_agreement": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "solvability_kappa": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "solvability_gwet_ac1": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "solvability_contingency": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "both_solvable",
+            "both_not_solvable",
+            "reviewer_1_only",
+            "reviewer_2_only"
+          ],
+          "properties": {
+            "both_solvable": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "both_not_solvable": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reviewer_1_only": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reviewer_2_only": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "solvability_kappa_bootstrap_ci": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "lower": {
+              "type": "number"
+            },
+            "upper": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "lower",
+            "upper"
+          ],
+          "additionalProperties": false
+        },
+        "bootstrap_replicates": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "locator_jaccard_mean": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "locator_jaccard_median": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "adjudicated_criteria": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "final_map_freeze_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "final_map_frozen_at": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "seeded_failures": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempted",
+        "detected"
+      ],
+      "properties": {
+        "attempted": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "detected": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

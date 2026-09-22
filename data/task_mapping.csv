@@ -1,0 +1,9 @@
+task_id,task_label
+T01,stability update
+T02,overwrap position
+T03,validation defense
+T04,authority response
+T05,records integrity
+T06,supplier-change audit
+T07,qualification sweep
+T08,shelf-life assessment

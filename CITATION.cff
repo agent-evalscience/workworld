@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the WorkWorlds paper."
+title: "WorkWorlds: An Infrastructure for Evaluating AI Agents on Workplace Tasks"
+type: software
+authors:
+  - family-names: "Hua"
+    given-names: "Yining"
+    affiliation: "Harvard University; Agent Evaluation Science Inc."
+  - family-names: "Lian"
+    given-names: "Levi"
+    affiliation: "Raycaster; Stanford University"
+version: "0.1.0"
+date-released: 2026-09-22
+license: CC-BY-4.0
+repository-code: "https://github.com/ningkko/eval-worlds-results-paper"
+url: "https://arxiv.org/abs/2609.23806"
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/2609.23806"
+    description: "arXiv preprint"
+preferred-citation:
+  type: article
+  title: "WorkWorlds: An Infrastructure for Evaluating AI Agents on Workplace Tasks"
+  authors:
+    - family-names: "Hua"
+      given-names: "Yining"
+    - family-names: "Lian"
+      given-names: "Levi"
+  year: 2026
+  identifiers:
+    - type: url
+      value: "https://arxiv.org/abs/2609.23806"
+      description: "arXiv:2609.23806 [cs.AI]"

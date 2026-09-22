@@ -1,0 +1,146 @@
+{
+  "schema": "eval-worlds-analysis-results/v1",
+  "source": {
+    "criterion_results": "data/criterion_results.csv",
+    "run_ledger": "data/run_ledger.csv",
+    "matched_results": "data/matched_results.json"
+  },
+  "methods": {
+    "point_estimates": "Logistic GEE with exchangeable task correlation and condition and agent fixed effects; probabilities are standardized equally over the three-agent panel.",
+    "intervals": "Percentile task-cluster bootstrap of the GEE-standardized risk difference. Each draw resamples the eight tasks with replacement, refits the same logistic GEE, and re-standardizes over the three-agent panel.",
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20270908
+  },
+  "primary_outcomes": {
+    "criterion_pass": {
+      "raw": {
+        "world_first": 0.6817129629629629,
+        "task_first": 0.7685185185185185
+      },
+      "standardized_gee": {
+        "world_first": 0.6799677995583409,
+        "task_first": 0.7669363972874285,
+        "risk_difference": 0.0869685977290876,
+        "working_correlation": -0.0015647137245583351,
+        "coefficients": {
+          "Intercept": 1.158287225108078,
+          "C(condition)[T.world_first]": -0.45200800496937743,
+          "C(agent_id)[T.opus5]": 0.6345151940061701,
+          "C(agent_id)[T.sol]": -0.39292259272258845
+        }
+      },
+      "task_cluster_bootstrap": {
+        "replicates": 2000,
+        "valid_replicates": 1995,
+        "seed": 20270908,
+        "percentile_interval": [
+          0.009531186651590523,
+          0.1564486853338647
+        ],
+        "estimator": "Task-cluster bootstrap of the GEE-standardized risk difference. Each replicate resamples the eight tasks with replacement, refits the same logistic GEE, and re-standardizes over the three-agent panel."
+      }
+    },
+    "evidence_access_observed": {
+      "raw": {
+        "world_first": 0.7292161520190024,
+        "task_first": 0.9044811320754716
+      },
+      "standardized_gee": {
+        "world_first": 0.7282585127069838,
+        "task_first": 0.9039712345399438,
+        "risk_difference": 0.17571272183295994,
+        "working_correlation": 0.0014304598894662054,
+        "coefficients": {
+          "Intercept": 2.1407054992943486,
+          "C(condition)[T.world_first]": -1.2722714367516816,
+          "C(agent_id)[T.opus5]": 0.588504829550392,
+          "C(agent_id)[T.sol]": -0.16345059359599928
+        }
+      },
+      "task_cluster_bootstrap": {
+        "replicates": 2000,
+        "valid_replicates": 1989,
+        "seed": 20270908,
+        "percentile_interval": [
+          0.10301729741436025,
+          0.24268804804652358
+        ],
+        "estimator": "Task-cluster bootstrap of the GEE-standardized risk difference. Each replicate resamples the eight tasks with replacement, refits the same logistic GEE, and re-standardizes over the three-agent panel."
+      }
+    }
+  },
+  "descriptive_decomposition": {
+    "pass_given_access": {
+      "raw": {
+        "world_first": 0.8420195439739414,
+        "task_first": 0.8265971316818774
+      },
+      "risk_difference": -0.01542241229206398,
+      "task_cluster_bootstrap": {
+        "replicates": 2000,
+        "seed": 20270908,
+        "percentile_interval": [
+          -0.0626150460184074,
+          0.026907299047976053
+        ],
+        "estimator": "Task-cluster bootstrap of the raw marginal risk difference from resampled task-level pass and access counts."
+      },
+      "post_treatment": true
+    }
+  },
+  "equal_task_sensitivity": {
+    "criterion_pass": {
+      "world_first": 0.6871817129629629,
+      "task_first": 0.7714522456709956,
+      "risk_difference": 0.08427053270803264
+    },
+    "evidence_access_observed": {
+      "world_first": 0.7292474283713126,
+      "task_first": 0.9015996883100263,
+      "risk_difference": 0.17235225993871373
+    }
+  },
+  "access_unknown_sensitivity": {
+    "all_unknown_accessed": {
+      "world_first": 0.7361111111111112,
+      "task_first": 0.90625,
+      "risk_difference": 0.17013888888888884
+    },
+    "all_unknown_not_accessed": {
+      "world_first": 0.7106481481481481,
+      "task_first": 0.8877314814814815,
+      "risk_difference": 0.17708333333333337
+    },
+    "condition_adversarial_lower": {
+      "world_first": 0.7361111111111112,
+      "task_first": 0.8877314814814815,
+      "risk_difference": 0.15162037037037035
+    },
+    "condition_adversarial_upper": {
+      "world_first": 0.7106481481481481,
+      "task_first": 0.90625,
+      "risk_difference": 0.19560185185185186
+    }
+  },
+  "curator_submitted_source_jaccard": {
+    "by_task": [
+      0.8333333333333334,
+      0.8181818181818182,
+      0.7,
+      0.8,
+      0.8,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mean": 0.8689393939393939,
+    "minimum": 0.7,
+    "maximum": 1.0
+  },
+  "software": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "statsmodels": "0.14.6"
+  }
+}
