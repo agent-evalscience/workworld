@@ -12,6 +12,11 @@ WorkWorlds is an evaluation infrastructure for workplace agents in which the org
 
 The measured study uses PharmaCo, a fictional sterile-injectable pharmaceutical company, with 8 measured tasks across 6 employee seats. The paper also describes three additional organizational worlds: OncologyCo, DiagnosticsCo, and ClinicalSiteCo.
 
+
+## Research collaboration and data provenance
+
+WorkWorlds was developed through a research collaboration with Raycaster and within Raycaster's broader ecosystem for building and evaluating agent systems. That collaboration supported both the infrastructure development and access to real-world organizational data and source materials supplied through third-party data-provider relationships. These materials informed the construction and validation of the research environments. PharmaCo and the other named organizational worlds are fictionalized research environments; restricted provider data and source materials are not included in this public release.
+
 ## Main result
 
 Across 192 matched evaluations, the task-curated subset produced higher measured sufficient-evidence access (90.4% vs. 72.8%) and criterion pass (76.7% vs. 68.0%) than the full role-visible projection. Pass conditional on observed evidence access was similar: 82.7% under curation and 84.2% under the full projection. The higher curated values reflect the effect of pre-selecting task-relevant information on the evaluation, not a change in the underlying agent.
@@ -112,7 +117,9 @@ The analysis reads the frozen criterion- and run-level ledgers and writes `data/
 
 ## Release boundary
 
-The public artifact does not include the production WorkWorlds implementation, production world builder, production materialization or permission logic, execution infrastructure, tool integrations, the measured PharmaCo organizational corpus, restricted source materials, held-out verifier evidence, or raw trajectories containing organizational content.
+The public artifact does not include the production WorkWorlds implementation, production world builder, production materialization or permission logic, execution infrastructure, tool integrations, the measured PharmaCo organizational corpus, restricted source materials, held-out verifier evidence, raw trajectories containing organizational content, or third-party provider data.
+
+Third-party source materials remain subject to the applicable provider agreements, licenses, confidentiality obligations, and other rights. The CC BY 4.0 license applies only to material contained in this public release for which the authors have the right to grant that license. No data provider is represented as endorsing the paper, its findings, or this release unless expressly stated.
 
 See [ARTIFACT_SCOPE.md](ARTIFACT_SCOPE.md) for the exact public/private boundary.
 
@@ -132,6 +139,6 @@ The latest preprint is [arXiv:2609.23806](https://arxiv.org/abs/2609.23806). Cit
 }
 ```
 
-## License
+## License and disclaimer
 
-This release is distributed under [CC BY 4.0](LICENSE).
+This public release is distributed under [CC BY 4.0](LICENSE), subject to the release boundary and third-party rights described above. It is provided for research and evaluation purposes on an as-is basis, without warranties of accuracy, completeness, fitness for a particular purpose, or non-infringement. To the extent permitted by applicable law, the authors, their institutions, Agent Evaluation Science Inc., Raycaster, and participating data providers are not responsible for losses or liabilities arising from use of, reliance on, or deployment based on this release. Nothing in the release transfers rights to restricted or third-party source materials.
