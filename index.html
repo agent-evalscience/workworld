@@ -142,7 +142,35 @@
       line-height: 1.78;
     }
     .hero-byline { color: #090c27a6; margin: 18px 0 0; font-size: clamp(.72rem, .88vw, .86rem); line-height: 1.6; }
-    .hero-links { margin-top: 20px; }
+    .hero-links { margin-top: 24px; gap: 12px; align-items: center; }
+    .hero-links a {
+      border: 1px solid #293dff55;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #ffffffb8;
+      box-shadow: 0 4px 14px #293dff10;
+      font-size: .73rem;
+      font-weight: 650;
+    }
+    .hero-links a:first-child {
+      color: #fff;
+      background: var(--blue);
+      border-color: var(--blue);
+      box-shadow: 0 6px 18px #293dff2e;
+    }
+    .hero-links a:nth-child(2) {
+      color: var(--blue);
+      border-color: #293dff80;
+      background: #f7f8ff;
+    }
+    .hero-links a:last-child {
+      border-color: transparent;
+      background: transparent;
+      box-shadow: none;
+      padding-left: 6px;
+      padding-right: 6px;
+      font-weight: 550;
+    }
     .hero-meta {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -435,6 +463,39 @@
     .materials-links a span { transition: transform .2s ease; }
     .materials-links a:hover span { transform: translate(3px, -2px); }
     .contact-block { margin-top: 42px; }
+    .deploy-block {
+      border: 1px solid #6658e85c;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #ffffffd9 0%, #f3f4ffdf 100%);
+      padding: 30px 32px;
+      box-shadow: 0 14px 40px #293dff12, inset 0 1px #ffffff;
+    }
+    .deploy-block > p {
+      color: var(--blue);
+      font-size: .64rem;
+    }
+    .deploy-block .materials-copy h3 {
+      font-size: clamp(1.65rem, 2.7vw, 2.35rem);
+      color: var(--ink);
+    }
+    .deploy-block .materials-copy > p {
+      max-width: 900px;
+      font-size: .78rem;
+      color: #090c27c7;
+    }
+    .deploy-block .materials-links {
+      margin-top: 20px;
+    }
+    .deploy-block .materials-links a {
+      color: #fff;
+      background: var(--blue);
+      border: 1px solid var(--blue);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: .7rem;
+      font-weight: 650;
+      box-shadow: 0 6px 18px #293dff2a;
+    }
 
     .verify-box {
       margin-top: clamp(48px, 6vh, 68px);
@@ -507,8 +568,8 @@
         <p class="hero-byline">Yining Hua · Harvard University · Agent Evaluation Science Inc. &nbsp;&nbsp; Levi Lian · Raycaster · Stanford University</p>
         <p class="dek">WorkWorlds fixes the organization before the task. A world first fixes a revision, date, and employee seat and materializes the role-visible workplace. The task is introduced only after that projection is fixed, allowing workplace structure and information exposure to be varied without rebuilding the organization around each assignment.</p>
         <nav class="links hero-links" aria-label="Paper links">
-          <a href="https://arxiv.org/abs/2609.23806">arXiv <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/agent-evalscience/workworld">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://arxiv.org/abs/2609.23806">arXiv paper <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/agent-evalscience/workworld">GitHub repository <span aria-hidden="true">↗</span></a>
           <a href="#citation">Citation <span aria-hidden="true">↓</span></a>
         </nav>
         <div class="hero-meta" aria-label="Study summary">
@@ -666,13 +727,13 @@
 }</pre>
           </div>
         </div>
-        <div class="materials-block contact-block">
+        <div class="materials-block contact-block deploy-block">
           <p>Deploy</p>
           <div class="materials-copy">
             <h3>Bring WorkWorlds to an industry setting.</h3>
             <p>Interested in deploying an industry-scale evaluation environment inside your organization? Contact us to discuss adapting the infrastructure to your workflows, permissions, internal systems, and evaluation needs.</p>
             <nav class="materials-links" aria-label="Contact links">
-              <a href="mailto:yininghua@g.harvard.edu?subject=WorkWorlds%20deployment">Contact us <span aria-hidden="true">↗</span></a>
+              <a href="mailto:yininghua@g.harvard.edu?subject=WorkWorlds%20deployment">Contact us about deployment <span aria-hidden="true">↗</span></a>
             </nav>
           </div>
         </div>
