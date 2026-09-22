@@ -4,7 +4,7 @@
 
 Yining Hua (Harvard University; Agent Evaluation Science Inc.) · Levi Lian (Raycaster; Stanford University) · [arXiv:2609.23806](https://arxiv.org/abs/2609.23806) · [CC BY 4.0](LICENSE)
 
-[Project page](index.html) · [arXiv paper](https://arxiv.org/abs/2609.23806) · [Study data](data/) · [Analysis](analysis/) · [Illustrative reference implementation](reference/) · [Artifact scope](ARTIFACT_SCOPE.md)
+[Project page](https://agent-evalscience.github.io/workworld/) · [arXiv paper](https://arxiv.org/abs/2609.23806) · [Study data](data/) · [Analysis](analysis/) · [Illustrative reference implementation](reference/) · [Artifact scope](ARTIFACT_SCOPE.md)
 
 ## Overview
 
