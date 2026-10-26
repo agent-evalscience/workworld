@@ -12,7 +12,7 @@ authors:
 version: "0.1.0"
 date-released: 2026-09-22
 license: CC-BY-4.0
-repository-code: "https://github.com/ningkko/eval-worlds-results-paper"
+repository-code: "https://github.com/ningkko/workworld"
 url: "https://arxiv.org/abs/2609.23806"
 identifiers:
   - type: url
